@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ProdMoh/llm-prices/schema/prices.schema.json",
+  "title": "LLM API prices",
+  "type": "object",
+  "required": ["schema_version", "generated", "currency", "unit", "license", "models"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "generated": { "$ref": "#/$defs/date" },
+    "currency": { "const": "USD" },
+    "unit": { "const": "per 1M tokens" },
+    "license": { "const": "CC-BY-4.0" },
+    "attribution": { "type": "string" },
+    "repository": { "type": "string", "format": "uri" },
+    "models": { "type": "array", "items": { "$ref": "#/$defs/model" } }
+  },
+  "$defs": {
+    "date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "price": { "type": "number", "minimum": 0 },
+    "multiplier": {
+      "oneOf": [
+        { "type": "number", "exclusiveMinimum": 0 },
+        { "type": "object", "required": ["input"], "additionalProperties": false, "properties": { "input": { "type": "number" }, "output": { "type": "number" }, "cached_input": { "type": "number" } } }
+      ]
+    },
+    "model": {
+      "type": "object",
+      "required": ["provider", "provider_name", "model", "aliases", "pricing_url", "status", "price_per_million_tokens"],
+      "additionalProperties": false,
+      "properties": {
+        "provider": { "enum": ["openai", "anthropic", "google", "perplexity", "together", "fireworks", "deepinfra", "baseten"] },
+        "provider_name": { "type": "string" },
+        "model": { "type": "string", "minLength": 1 },
+        "aliases": { "type": "array", "items": { "type": "string" } },
+        "pricing_url": { "type": "string", "format": "uri" },
+        "status": { "enum": ["active", "deprecated", "shut_down"] },
+        "price_per_million_tokens": {
+          "type": "object",
+          "required": ["input", "output"],
+          "additionalProperties": false,
+          "properties": {
+            "input": { "$ref": "#/$defs/price" }, "cached_input": { "$ref": "#/$defs/price" }, "output": { "$ref": "#/$defs/price" },
+            "cache_write_5m": { "$ref": "#/$defs/price" }, "cache_write_1h": { "$ref": "#/$defs/price" }, "cache_write": { "$ref": "#/$defs/price" }
+          }
+        },
+        "long_prompt": {
+          "type": "object",
+          "required": ["over_input_tokens", "input", "output"],
+          "additionalProperties": false,
+          "properties": { "over_input_tokens": { "type": "integer", "minimum": 1 }, "input": { "$ref": "#/$defs/price" }, "cached_input": { "$ref": "#/$defs/price" }, "output": { "$ref": "#/$defs/price" } }
+        },
+        "service_tiers": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": { "batch": { "$ref": "#/$defs/multiplier" }, "flex": { "$ref": "#/$defs/multiplier" }, "priority": { "$ref": "#/$defs/multiplier" }, "fast_mode": { "$ref": "#/$defs/multiplier" }, "ultrafast": { "$ref": "#/$defs/multiplier" } }
+        },
+        "fast_mode_price_per_million_tokens": {
+          "type": "object", "required": ["input", "output"], "additionalProperties": false,
+          "properties": { "input": { "$ref": "#/$defs/price" }, "output": { "$ref": "#/$defs/price" } }
+        },
+        "scheduled_changes": {
+          "type": "array", "minItems": 1,
+          "items": {
+            "type": "object", "required": ["effective", "input", "output"], "additionalProperties": false,
+            "properties": { "effective": { "$ref": "#/$defs/date" }, "input": { "$ref": "#/$defs/price" }, "cached_input": { "$ref": "#/$defs/price" }, "output": { "$ref": "#/$defs/price" } }
+          }
+        },
+        "retirement": {
+          "type": "object", "required": ["shutdown_date", "earliest_date", "replacement", "source"], "additionalProperties": false,
+          "properties": { "shutdown_date": { "$ref": "#/$defs/date" }, "earliest_date": { "type": "boolean" }, "replacement": { "type": "string" }, "source": { "type": "string", "format": "uri" } }
+        },
+        "notes": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}

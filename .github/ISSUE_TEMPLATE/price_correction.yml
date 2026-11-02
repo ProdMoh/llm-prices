@@ -1,0 +1,24 @@
+name: Price correction
+description: A price, tier, scheduled change or shutdown date is wrong or missing
+title: "Price correction: "
+labels: [data]
+body:
+  - type: input
+    id: model
+    attributes:
+      label: Provider and model ID
+      placeholder: anthropic / claude-sonnet-5-5
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: What is wrong, and what it should be
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Link to the provider's pricing or deprecation page
+    validations:
+      required: true

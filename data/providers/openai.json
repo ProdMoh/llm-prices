@@ -1,0 +1,949 @@
+{
+  "schema_version": 1,
+  "generated": "2026-11-02",
+  "currency": "USD",
+  "unit": "per 1M tokens",
+  "license": "CC-BY-4.0",
+  "attribution": "Ganivra (https://ganivra.com/supported-models)",
+  "repository": "https://github.com/ProdMoh/llm-prices",
+  "models": [
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-4.1",
+      "aliases": [
+        "gpt-4.1-2025-04-14"
+      ],
+      "pricing_url": "https://openai.com/api/pricing/",
+      "status": "deprecated",
+      "price_per_million_tokens": {
+        "input": 2,
+        "cached_input": 0.5,
+        "output": 8
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "priority": 1.75,
+        "fast_mode": 1.75
+      },
+      "retirement": {
+        "shutdown_date": "2027-01-14",
+        "earliest_date": false,
+        "replacement": "gpt-6-luna",
+        "source": "https://developers.openai.com/api/docs/deprecations"
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Fast mode at 1.75×"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-4.1-mini",
+      "aliases": [
+        "gpt-4.1-mini-2025-04-14"
+      ],
+      "pricing_url": "https://openai.com/api/pricing/",
+      "status": "deprecated",
+      "price_per_million_tokens": {
+        "input": 0.4,
+        "cached_input": 0.1,
+        "output": 1.6
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "priority": 1.75,
+        "fast_mode": 1.75
+      },
+      "retirement": {
+        "shutdown_date": "2027-01-14",
+        "earliest_date": false,
+        "replacement": "gpt-6-luna",
+        "source": "https://developers.openai.com/api/docs/deprecations"
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Fast mode at 1.75×"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-4.1-nano",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "shut_down",
+      "price_per_million_tokens": {
+        "input": 0.1,
+        "cached_input": 0.025,
+        "output": 0.4
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "priority": 2,
+        "fast_mode": 2
+      },
+      "retirement": {
+        "shutdown_date": "2026-10-23",
+        "earliest_date": false,
+        "replacement": "gpt-5.6-luna",
+        "source": "https://developers.openai.com/api/docs/deprecations"
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Fast mode at 2×"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-4o",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "deprecated",
+      "price_per_million_tokens": {
+        "input": 2.5,
+        "cached_input": 1.25,
+        "output": 10
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "priority": 1.7,
+        "fast_mode": 1.7
+      },
+      "retirement": {
+        "shutdown_date": "2027-01-14",
+        "earliest_date": false,
+        "replacement": "gpt-6-luna",
+        "source": "https://developers.openai.com/api/docs/deprecations"
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Fast mode at 1.7×"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-4o-mini",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "deprecated",
+      "price_per_million_tokens": {
+        "input": 0.15,
+        "cached_input": 0.075,
+        "output": 0.6
+      },
+      "service_tiers": {
+        "batch": 0.5
+      },
+      "retirement": {
+        "shutdown_date": "2027-01-14",
+        "earliest_date": false,
+        "replacement": "gpt-6-luna",
+        "source": "https://developers.openai.com/api/docs/deprecations"
+      },
+      "notes": [
+        "Batch at 50% off"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5",
+      "aliases": [
+        "gpt-5-2025-08-07"
+      ],
+      "pricing_url": "https://openai.com/api/pricing/",
+      "status": "deprecated",
+      "price_per_million_tokens": {
+        "input": 1.25,
+        "cached_input": 0.125,
+        "output": 10
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 2,
+        "fast_mode": 2
+      },
+      "retirement": {
+        "shutdown_date": "2026-12-11",
+        "earliest_date": false,
+        "replacement": "gpt-5.6-sol",
+        "source": "https://developers.openai.com/api/docs/deprecations"
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Fast mode at 2×"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5-mini",
+      "aliases": [
+        "gpt-5-mini-2025-08-07"
+      ],
+      "pricing_url": "https://openai.com/api/pricing/",
+      "status": "deprecated",
+      "price_per_million_tokens": {
+        "input": 0.25,
+        "cached_input": 0.025,
+        "output": 2
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 1.8,
+        "fast_mode": 1.8
+      },
+      "retirement": {
+        "shutdown_date": "2026-12-11",
+        "earliest_date": false,
+        "replacement": "gpt-5.6-terra",
+        "source": "https://developers.openai.com/api/docs/deprecations"
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Fast mode at 1.8×"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5-nano",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "deprecated",
+      "price_per_million_tokens": {
+        "input": 0.05,
+        "cached_input": 0.005,
+        "output": 0.4
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5
+      },
+      "retirement": {
+        "shutdown_date": "2026-12-11",
+        "earliest_date": false,
+        "replacement": "gpt-5.6-luna",
+        "source": "https://developers.openai.com/api/docs/deprecations"
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5-pro",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "deprecated",
+      "price_per_million_tokens": {
+        "input": 15,
+        "output": 120
+      },
+      "service_tiers": {
+        "batch": 0.5
+      },
+      "retirement": {
+        "shutdown_date": "2026-12-11",
+        "earliest_date": false,
+        "replacement": "gpt-5.6-sol (reasoning.mode: pro)",
+        "source": "https://developers.openai.com/api/docs/deprecations"
+      },
+      "notes": [
+        "Batch at 50% off"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.1",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "deprecated",
+      "price_per_million_tokens": {
+        "input": 1.25,
+        "cached_input": 0.125,
+        "output": 10
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 2,
+        "fast_mode": 2
+      },
+      "retirement": {
+        "shutdown_date": "2027-04-01",
+        "earliest_date": false,
+        "replacement": "gpt-6-sol",
+        "source": "https://developers.openai.com/api/docs/deprecations"
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Fast mode at 2×"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.2",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 1.75,
+        "cached_input": 0.175,
+        "output": 14
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 2,
+        "fast_mode": 2
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Fast mode at 2×"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.2-pro",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 21,
+        "output": 168
+      },
+      "service_tiers": {
+        "batch": 0.5
+      },
+      "notes": [
+        "Batch at 50% off"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.3-codex",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "deprecated",
+      "price_per_million_tokens": {
+        "input": 1.75,
+        "cached_input": 0.175,
+        "output": 14
+      },
+      "service_tiers": {
+        "priority": 2,
+        "fast_mode": 2
+      },
+      "retirement": {
+        "shutdown_date": "2027-04-01",
+        "earliest_date": false,
+        "replacement": "gpt-6-sol",
+        "source": "https://developers.openai.com/api/docs/deprecations"
+      },
+      "notes": [
+        "Fast mode at 2×"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.4",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 2.5,
+        "cached_input": 0.25,
+        "output": 15
+      },
+      "long_prompt": {
+        "over_input_tokens": 272000,
+        "input": 5,
+        "cached_input": 0.5,
+        "output": 22.5
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 2,
+        "fast_mode": 2
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Fast mode at 2×",
+        "Above 272K input tokens: $5.00 in / $22.50 out"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.4-mini",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.75,
+        "cached_input": 0.075,
+        "output": 4.5
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 2,
+        "fast_mode": 2
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Fast mode at 2×"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.4-nano",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "deprecated",
+      "price_per_million_tokens": {
+        "input": 0.2,
+        "cached_input": 0.02,
+        "output": 1.25
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5
+      },
+      "retirement": {
+        "shutdown_date": "2027-04-01",
+        "earliest_date": false,
+        "replacement": "gpt-6-luna",
+        "source": "https://developers.openai.com/api/docs/deprecations"
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.4-pro",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 30,
+        "output": 180
+      },
+      "long_prompt": {
+        "over_input_tokens": 272000,
+        "input": 60,
+        "cached_input": 60,
+        "output": 270
+      },
+      "service_tiers": {
+        "batch": 0.5
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Above 272K input tokens: $60.00 in / $270.00 out"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.5",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 5,
+        "cached_input": 0.5,
+        "output": 30
+      },
+      "long_prompt": {
+        "over_input_tokens": 272000,
+        "input": 10,
+        "cached_input": 1,
+        "output": 45
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 2.5,
+        "fast_mode": 2.5
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Fast mode at 2.5×",
+        "Above 272K input tokens: $10.00 in / $45.00 out"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.5-pro",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 30,
+        "output": 180
+      },
+      "long_prompt": {
+        "over_input_tokens": 272000,
+        "input": 60,
+        "cached_input": 60,
+        "output": 270
+      },
+      "service_tiers": {
+        "batch": 0.5
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Above 272K input tokens: $60.00 in / $270.00 out"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.6-luna",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.2,
+        "cached_input": 0.02,
+        "output": 1.2,
+        "cache_write": 0.25
+      },
+      "long_prompt": {
+        "over_input_tokens": 272000,
+        "input": 0.4,
+        "cached_input": 0.04,
+        "output": 1.8
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 2,
+        "fast_mode": 2
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Fast mode at 2×",
+        "Above 272K input tokens: $0.40 in / $1.80 out",
+        "Cache writes $0.25"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.6-sol",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 4,
+        "cached_input": 0.4,
+        "output": 20,
+        "cache_write": 5
+      },
+      "long_prompt": {
+        "over_input_tokens": 272000,
+        "input": 8,
+        "cached_input": 0.8,
+        "output": 30
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 2,
+        "fast_mode": 2
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Fast mode at 2×",
+        "Above 272K input tokens: $8.00 in / $30.00 out",
+        "Cache writes $5.00"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.6-terra",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 2,
+        "cached_input": 0.2,
+        "output": 12,
+        "cache_write": 2.5
+      },
+      "long_prompt": {
+        "over_input_tokens": 272000,
+        "input": 4,
+        "cached_input": 0.4,
+        "output": 18
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 2,
+        "fast_mode": 2
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Fast mode at 2×",
+        "Above 272K input tokens: $4.00 in / $18.00 out",
+        "Cache writes $2.50"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-6-astra",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 10,
+        "cached_input": 1,
+        "output": 50,
+        "cache_write": 12.5
+      },
+      "long_prompt": {
+        "over_input_tokens": 272000,
+        "input": 20,
+        "cached_input": 2,
+        "output": 75
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 2,
+        "fast_mode": 2,
+        "ultrafast": 6
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Fast mode at 2×",
+        "Above 272K input tokens: $20.00 in / $75.00 out",
+        "Cache writes $12.50"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-6-luna",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.1,
+        "cached_input": 0.01,
+        "output": 0.5,
+        "cache_write": 0.125
+      },
+      "long_prompt": {
+        "over_input_tokens": 272000,
+        "input": 0.2,
+        "cached_input": 0.02,
+        "output": 0.75
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 2,
+        "fast_mode": 2
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Fast mode at 2×",
+        "Above 272K input tokens: $0.20 in / $0.75 out",
+        "Cache writes $0.125"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-6-sol",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 2,
+        "cached_input": 0.2,
+        "output": 10,
+        "cache_write": 2.5
+      },
+      "long_prompt": {
+        "over_input_tokens": 272000,
+        "input": 4,
+        "cached_input": 0.4,
+        "output": 15
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 2,
+        "fast_mode": 2
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Fast mode at 2×",
+        "Above 272K input tokens: $4.00 in / $15.00 out",
+        "Cache writes $2.50"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-6.1-sol",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 2,
+        "cached_input": 0.1,
+        "output": 10,
+        "cache_write": 2.5
+      },
+      "long_prompt": {
+        "over_input_tokens": 272000,
+        "input": 4,
+        "cached_input": 0.2,
+        "output": 15
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 2,
+        "fast_mode": 2,
+        "ultrafast": 6
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Fast mode at 2×",
+        "Above 272K input tokens: $4.00 in / $15.00 out",
+        "Cache writes $2.50"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-6.1-terra",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 1,
+        "cached_input": 0.05,
+        "output": 5,
+        "cache_write": 1.25
+      },
+      "long_prompt": {
+        "over_input_tokens": 272000,
+        "input": 2,
+        "cached_input": 0.1,
+        "output": 7.5
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 2,
+        "fast_mode": 2
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Fast mode at 2×",
+        "Above 272K input tokens: $2.00 in / $7.50 out",
+        "Cache writes $1.25"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "o1",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "shut_down",
+      "price_per_million_tokens": {
+        "input": 15,
+        "cached_input": 7.5,
+        "output": 60
+      },
+      "service_tiers": {
+        "batch": 0.5
+      },
+      "retirement": {
+        "shutdown_date": "2026-10-23",
+        "earliest_date": false,
+        "replacement": "gpt-5.6-sol",
+        "source": "https://developers.openai.com/api/docs/deprecations"
+      },
+      "notes": [
+        "Batch at 50% off"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "o1-pro",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "shut_down",
+      "price_per_million_tokens": {
+        "input": 150,
+        "output": 600
+      },
+      "service_tiers": {
+        "batch": 0.5
+      },
+      "retirement": {
+        "shutdown_date": "2026-10-23",
+        "earliest_date": false,
+        "replacement": "gpt-5.6-sol (reasoning.mode: pro)",
+        "source": "https://developers.openai.com/api/docs/deprecations"
+      },
+      "notes": [
+        "Batch at 50% off"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "o3",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "deprecated",
+      "price_per_million_tokens": {
+        "input": 2,
+        "cached_input": 0.5,
+        "output": 8
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 1.75,
+        "fast_mode": 1.75
+      },
+      "retirement": {
+        "shutdown_date": "2026-12-11",
+        "earliest_date": false,
+        "replacement": "gpt-5.6-sol",
+        "source": "https://developers.openai.com/api/docs/deprecations"
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Fast mode at 1.75×"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "o3-mini",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "shut_down",
+      "price_per_million_tokens": {
+        "input": 1.1,
+        "cached_input": 0.55,
+        "output": 4.4
+      },
+      "service_tiers": {
+        "batch": 0.5
+      },
+      "retirement": {
+        "shutdown_date": "2026-10-23",
+        "earliest_date": false,
+        "replacement": "gpt-5.6-sol",
+        "source": "https://developers.openai.com/api/docs/deprecations"
+      },
+      "notes": [
+        "Batch at 50% off"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "o3-pro",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "deprecated",
+      "price_per_million_tokens": {
+        "input": 20,
+        "output": 80
+      },
+      "service_tiers": {
+        "batch": 0.5
+      },
+      "retirement": {
+        "shutdown_date": "2026-12-11",
+        "earliest_date": false,
+        "replacement": "gpt-5.6-sol (reasoning.mode: pro)",
+        "source": "https://developers.openai.com/api/docs/deprecations"
+      },
+      "notes": [
+        "Batch at 50% off"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "o4-mini",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "shut_down",
+      "price_per_million_tokens": {
+        "input": 1.1,
+        "cached_input": 0.275,
+        "output": 4.4
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5
+      },
+      "retirement": {
+        "shutdown_date": "2026-10-23",
+        "earliest_date": false,
+        "replacement": "gpt-5.6-terra",
+        "source": "https://developers.openai.com/api/docs/deprecations"
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off"
+      ]
+    }
+  ]
+}

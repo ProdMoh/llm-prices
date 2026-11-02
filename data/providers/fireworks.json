@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "generated": "2026-11-02",
+  "currency": "USD",
+  "unit": "per 1M tokens",
+  "license": "CC-BY-4.0",
+  "attribution": "Ganivra (https://ganivra.com/supported-models)",
+  "repository": "https://github.com/ProdMoh/llm-prices",
+  "models": [
+    {
+      "provider": "fireworks",
+      "provider_name": "Fireworks",
+      "model": "accounts/fireworks/models/deepseek-v4p1-flash",
+      "aliases": [],
+      "pricing_url": "https://docs.fireworks.ai/serverless/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.3,
+        "cached_input": 0.006,
+        "output": 1.2
+      }
+    },
+    {
+      "provider": "fireworks",
+      "provider_name": "Fireworks",
+      "model": "accounts/fireworks/models/deepseek-v4p1-flash-1017",
+      "aliases": [],
+      "pricing_url": "https://docs.fireworks.ai/serverless/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.3,
+        "cached_input": 0.006,
+        "output": 1.2
+      }
+    },
+    {
+      "provider": "fireworks",
+      "provider_name": "Fireworks",
+      "model": "accounts/fireworks/models/glm-5p3",
+      "aliases": [],
+      "pricing_url": "https://docs.fireworks.ai/serverless/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 1.4,
+        "cached_input": 0.26,
+        "output": 4.4
+      }
+    },
+    {
+      "provider": "fireworks",
+      "provider_name": "Fireworks",
+      "model": "accounts/fireworks/models/glm-5p3-flash",
+      "aliases": [],
+      "pricing_url": "https://docs.fireworks.ai/serverless/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.15,
+        "cached_input": 0.03,
+        "output": 0.5
+      }
+    },
+    {
+      "provider": "fireworks",
+      "provider_name": "Fireworks",
+      "model": "accounts/fireworks/models/gpt-oss-120b",
+      "aliases": [],
+      "pricing_url": "https://docs.fireworks.ai/serverless/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.15,
+        "cached_input": 0.015,
+        "output": 0.6
+      }
+    },
+    {
+      "provider": "fireworks",
+      "provider_name": "Fireworks",
+      "model": "accounts/fireworks/models/kimi-k3",
+      "aliases": [],
+      "pricing_url": "https://docs.fireworks.ai/serverless/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 3,
+        "cached_input": 0.3,
+        "output": 15
+      }
+    },
+    {
+      "provider": "fireworks",
+      "provider_name": "Fireworks",
+      "model": "accounts/fireworks/models/minimax-m3",
+      "aliases": [],
+      "pricing_url": "https://docs.fireworks.ai/serverless/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.3,
+        "cached_input": 0.06,
+        "output": 1.2
+      }
+    },
+    {
+      "provider": "fireworks",
+      "provider_name": "Fireworks",
+      "model": "accounts/fireworks/models/muse-spark-open",
+      "aliases": [],
+      "pricing_url": "https://docs.fireworks.ai/serverless/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 1.25,
+        "cached_input": 0.15,
+        "output": 4.25
+      }
+    },
+    {
+      "provider": "fireworks",
+      "provider_name": "Fireworks",
+      "model": "accounts/fireworks/models/nemotron-3-ultra-nvfp4",
+      "aliases": [],
+      "pricing_url": "https://docs.fireworks.ai/serverless/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.6,
+        "cached_input": 0.12,
+        "output": 2.4
+      }
+    },
+    {
+      "provider": "fireworks",
+      "provider_name": "Fireworks",
+      "model": "accounts/fireworks/models/nemotron-lightning-3p5-30b-a3b",
+      "aliases": [],
+      "pricing_url": "https://docs.fireworks.ai/serverless/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.05,
+        "cached_input": 0.01,
+        "output": 0.2
+      }
+    },
+    {
+      "provider": "fireworks",
+      "provider_name": "Fireworks",
+      "model": "accounts/fireworks/models/qwen3p8-max",
+      "aliases": [],
+      "pricing_url": "https://docs.fireworks.ai/serverless/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 2,
+        "cached_input": 0.25,
+        "output": 6
+      }
+    }
+  ]
+}

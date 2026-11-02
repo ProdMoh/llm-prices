@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "generated": "2026-11-02",
+  "currency": "USD",
+  "unit": "per 1M tokens",
+  "license": "CC-BY-4.0",
+  "attribution": "Ganivra (https://ganivra.com/supported-models)",
+  "repository": "https://github.com/ProdMoh/llm-prices",
+  "models": [
+    {
+      "provider": "perplexity",
+      "provider_name": "Perplexity",
+      "model": "sonar",
+      "aliases": [],
+      "pricing_url": "https://docs.perplexity.ai/docs/getting-started/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 1,
+        "output": 1
+      },
+      "notes": [
+        "Request fee from $5.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "perplexity",
+      "provider_name": "Perplexity",
+      "model": "sonar-pro",
+      "aliases": [],
+      "pricing_url": "https://docs.perplexity.ai/docs/getting-started/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 3,
+        "output": 15
+      },
+      "notes": [
+        "Request fee from $6.00 per 1,000"
+      ]
+    }
+  ]
+}

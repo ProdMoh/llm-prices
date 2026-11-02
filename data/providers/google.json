@@ -1,0 +1,435 @@
+{
+  "schema_version": 1,
+  "generated": "2026-11-02",
+  "currency": "USD",
+  "unit": "per 1M tokens",
+  "license": "CC-BY-4.0",
+  "attribution": "Ganivra (https://ganivra.com/supported-models)",
+  "repository": "https://github.com/ProdMoh/llm-prices",
+  "models": [
+    {
+      "provider": "google",
+      "provider_name": "Google Gemini",
+      "model": "gemini-2.5-flash",
+      "aliases": [],
+      "pricing_url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.3,
+        "cached_input": 0.03,
+        "output": 2.5
+      },
+      "service_tiers": {
+        "batch": {
+          "input": 0.5,
+          "cached_input": 1,
+          "output": 0.5
+        },
+        "flex": {
+          "input": 0.5,
+          "cached_input": 1,
+          "output": 0.5
+        },
+        "priority": 1.8
+      },
+      "notes": [
+        "Batch at 50% off, cached input $0.03",
+        "Flex at 50% off",
+        "Priority at 1.8×",
+        "Search grounding $35.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "google",
+      "provider_name": "Google Gemini",
+      "model": "gemini-2.5-flash-lite",
+      "aliases": [],
+      "pricing_url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.1,
+        "cached_input": 0.01,
+        "output": 0.4
+      },
+      "service_tiers": {
+        "batch": {
+          "input": 0.5,
+          "cached_input": 1,
+          "output": 0.5
+        },
+        "flex": {
+          "input": 0.5,
+          "cached_input": 1,
+          "output": 0.5
+        },
+        "priority": 1.8
+      },
+      "notes": [
+        "Batch at 50% off, cached input $0.01",
+        "Flex at 50% off",
+        "Priority at 1.8×",
+        "Search grounding $35.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "google",
+      "provider_name": "Google Gemini",
+      "model": "gemini-2.5-pro",
+      "aliases": [],
+      "pricing_url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 1.25,
+        "cached_input": 0.125,
+        "output": 10
+      },
+      "long_prompt": {
+        "over_input_tokens": 200000,
+        "input": 2.5,
+        "cached_input": 0.25,
+        "output": 15
+      },
+      "service_tiers": {
+        "batch": {
+          "input": 0.5,
+          "cached_input": 1,
+          "output": 0.5
+        },
+        "flex": {
+          "input": 0.5,
+          "cached_input": 1,
+          "output": 0.5
+        },
+        "priority": 1.8
+      },
+      "notes": [
+        "Batch at 50% off, cached input $0.125",
+        "Flex at 50% off",
+        "Priority at 1.8×",
+        "Above 200K input tokens: $2.50 in / $15.00 out",
+        "Search grounding $35.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "google",
+      "provider_name": "Google Gemini",
+      "model": "gemini-3-flash-preview",
+      "aliases": [],
+      "pricing_url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.5,
+        "cached_input": 0.05,
+        "output": 3
+      },
+      "service_tiers": {
+        "batch": {
+          "input": 0.5,
+          "cached_input": 1,
+          "output": 0.5
+        },
+        "flex": {
+          "input": 0.5,
+          "cached_input": 1,
+          "output": 0.5
+        },
+        "priority": 1.8
+      },
+      "notes": [
+        "Batch at 50% off, cached input $0.05",
+        "Flex at 50% off",
+        "Priority at 1.8×",
+        "Search grounding $14.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "google",
+      "provider_name": "Google Gemini",
+      "model": "gemini-3.1-flash-lite",
+      "aliases": [],
+      "pricing_url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "status": "deprecated",
+      "price_per_million_tokens": {
+        "input": 0.25,
+        "cached_input": 0.025,
+        "output": 1.5
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 1.8
+      },
+      "retirement": {
+        "shutdown_date": "2027-05-07",
+        "earliest_date": true,
+        "replacement": "gemini-3.5-flash-lite",
+        "source": "https://ai.google.dev/gemini-api/docs/deprecations"
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Priority at 1.8×",
+        "Search grounding $14.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "google",
+      "provider_name": "Google Gemini",
+      "model": "gemini-3.1-pro-preview",
+      "aliases": [],
+      "pricing_url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 2,
+        "cached_input": 0.2,
+        "output": 12
+      },
+      "long_prompt": {
+        "over_input_tokens": 200000,
+        "input": 4,
+        "cached_input": 0.4,
+        "output": 18
+      },
+      "service_tiers": {
+        "batch": {
+          "input": 0.5,
+          "cached_input": 1,
+          "output": 0.5
+        },
+        "flex": {
+          "input": 0.5,
+          "cached_input": 1,
+          "output": 0.5
+        },
+        "priority": 1.8
+      },
+      "notes": [
+        "Batch at 50% off, cached input $0.20",
+        "Flex at 50% off",
+        "Priority at 1.8×",
+        "Above 200K input tokens: $4.00 in / $18.00 out",
+        "Search grounding $14.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "google",
+      "provider_name": "Google Gemini",
+      "model": "gemini-3.1-pro-preview-customtools",
+      "aliases": [],
+      "pricing_url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 2,
+        "cached_input": 0.2,
+        "output": 12
+      },
+      "long_prompt": {
+        "over_input_tokens": 200000,
+        "input": 4,
+        "cached_input": 0.4,
+        "output": 18
+      },
+      "service_tiers": {
+        "batch": {
+          "input": 0.5,
+          "cached_input": 1,
+          "output": 0.5
+        },
+        "flex": {
+          "input": 0.5,
+          "cached_input": 1,
+          "output": 0.5
+        },
+        "priority": 1.8
+      },
+      "notes": [
+        "Batch at 50% off, cached input $0.20",
+        "Flex at 50% off",
+        "Priority at 1.8×",
+        "Above 200K input tokens: $4.00 in / $18.00 out",
+        "Search grounding $14.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "google",
+      "provider_name": "Google Gemini",
+      "model": "gemini-3.5-flash",
+      "aliases": [],
+      "pricing_url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 1.5,
+        "cached_input": 0.15,
+        "output": 9
+      },
+      "notes": [
+        "Search grounding $14.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "google",
+      "provider_name": "Google Gemini",
+      "model": "gemini-3.5-flash-lite",
+      "aliases": [],
+      "pricing_url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.3,
+        "cached_input": 0.03,
+        "output": 2.5
+      },
+      "service_tiers": {
+        "batch": {
+          "input": 0.5,
+          "cached_input": 0.6666666666666666,
+          "output": 0.5
+        },
+        "flex": {
+          "input": 0.5,
+          "cached_input": 0.6666666666666666,
+          "output": 0.5
+        },
+        "priority": {
+          "input": 1.8,
+          "cached_input": 1.6666666666666667,
+          "output": 1.8
+        }
+      },
+      "notes": [
+        "Batch at 50% off, cached input $0.02",
+        "Flex at 50% off",
+        "Priority at 1.8×",
+        "Search grounding $14.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "google",
+      "provider_name": "Google Gemini",
+      "model": "gemini-3.6-flash",
+      "aliases": [],
+      "pricing_url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.75,
+        "cached_input": 0.075,
+        "output": 3.75
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 1.8
+      },
+      "scheduled_changes": [
+        {
+          "effective": "2027-01-01",
+          "input": 1.5,
+          "cached_input": 0.15,
+          "output": 7.5
+        }
+      ],
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Priority at 1.8×",
+        "Search grounding $14.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "google",
+      "provider_name": "Google Gemini",
+      "model": "gemini-3.8-flash",
+      "aliases": [],
+      "pricing_url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.75,
+        "cached_input": 0.075,
+        "output": 3.75
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 1.8
+      },
+      "scheduled_changes": [
+        {
+          "effective": "2027-01-01",
+          "input": 1.5,
+          "cached_input": 0.15,
+          "output": 7.5
+        }
+      ],
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Priority at 1.8×",
+        "Search grounding $14.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "google",
+      "provider_name": "Google Gemini",
+      "model": "gemini-4-argon",
+      "aliases": [],
+      "pricing_url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 2,
+        "cached_input": 0.1,
+        "output": 10
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 1.8
+      },
+      "scheduled_changes": [
+        {
+          "effective": "2026-12-01",
+          "input": 4,
+          "cached_input": 0.2,
+          "output": 20
+        }
+      ],
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Priority at 1.8×",
+        "Search grounding $14.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "google",
+      "provider_name": "Google Gemini",
+      "model": "gemini-flash-latest",
+      "aliases": [],
+      "pricing_url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.75,
+        "cached_input": 0.075,
+        "output": 3.75
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 1.8
+      },
+      "scheduled_changes": [
+        {
+          "effective": "2027-01-01",
+          "input": 1.5,
+          "cached_input": 0.15,
+          "output": 7.5
+        }
+      ],
+      "notes": [
+        "Alias of gemini-3.8-flash",
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Priority at 1.8×",
+        "Search grounding $14.00 per 1,000"
+      ]
+    }
+  ]
+}

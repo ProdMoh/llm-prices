@@ -1,0 +1,3082 @@
+{
+  "schema_version": 1,
+  "generated": "2026-11-02",
+  "currency": "USD",
+  "unit": "per 1M tokens",
+  "license": "CC-BY-4.0",
+  "attribution": "Ganivra (https://ganivra.com/supported-models)",
+  "repository": "https://github.com/ProdMoh/llm-prices",
+  "models": [
+    {
+      "provider": "anthropic",
+      "provider_name": "Anthropic",
+      "model": "claude-3-5-haiku-20241022",
+      "aliases": [],
+      "pricing_url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "status": "shut_down",
+      "price_per_million_tokens": {
+        "input": 0.8,
+        "cached_input": 0.08,
+        "output": 4,
+        "cache_write_5m": 1,
+        "cache_write_1h": 1.6
+      },
+      "service_tiers": {
+        "batch": 0.5
+      },
+      "retirement": {
+        "shutdown_date": "2026-02-19",
+        "earliest_date": false,
+        "replacement": "claude-haiku-4-5-20251001",
+        "source": "https://platform.claude.com/docs/en/about-claude/model-deprecations"
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Cache writes $1.00 (5 min) / $1.60 (1 h)",
+        "Web search $10.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "anthropic",
+      "provider_name": "Anthropic",
+      "model": "claude-3-5-haiku-latest",
+      "aliases": [],
+      "pricing_url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "status": "shut_down",
+      "price_per_million_tokens": {
+        "input": 0.8,
+        "cached_input": 0.08,
+        "output": 4,
+        "cache_write_5m": 1,
+        "cache_write_1h": 1.6
+      },
+      "service_tiers": {
+        "batch": 0.5
+      },
+      "retirement": {
+        "shutdown_date": "2026-02-19",
+        "earliest_date": false,
+        "replacement": "claude-haiku-4-5-20251001",
+        "source": "https://platform.claude.com/docs/en/about-claude/model-deprecations"
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Cache writes $1.00 (5 min) / $1.60 (1 h)",
+        "Web search $10.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "anthropic",
+      "provider_name": "Anthropic",
+      "model": "claude-fable-5",
+      "aliases": [],
+      "pricing_url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 10,
+        "cached_input": 1,
+        "output": 50,
+        "cache_write_5m": 12.5,
+        "cache_write_1h": 20
+      },
+      "service_tiers": {
+        "batch": 0.5
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Cache writes $12.50 (5 min) / $20.00 (1 h)",
+        "Web search $10.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "anthropic",
+      "provider_name": "Anthropic",
+      "model": "claude-fable-5-1",
+      "aliases": [],
+      "pricing_url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 10,
+        "cached_input": 0.25,
+        "output": 50,
+        "cache_write_5m": 12.5,
+        "cache_write_1h": 20
+      },
+      "service_tiers": {
+        "batch": 0.5
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Cache writes $12.50 (5 min) / $20.00 (1 h)",
+        "Web search $10.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "anthropic",
+      "provider_name": "Anthropic",
+      "model": "claude-haiku-4-5",
+      "aliases": [
+        "claude-haiku-4-5-20251001"
+      ],
+      "pricing_url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 1,
+        "cached_input": 0.1,
+        "output": 5,
+        "cache_write_5m": 1.25,
+        "cache_write_1h": 2
+      },
+      "service_tiers": {
+        "batch": 0.5
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Cache writes $1.25 (5 min) / $2.00 (1 h)",
+        "Web search $10.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "anthropic",
+      "provider_name": "Anthropic",
+      "model": "claude-haiku-5-5",
+      "aliases": [],
+      "pricing_url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.1,
+        "cached_input": 0.01,
+        "output": 0.5,
+        "cache_write_5m": 0.125,
+        "cache_write_1h": 0.2
+      },
+      "long_prompt": {
+        "over_input_tokens": 100000,
+        "input": 0.5,
+        "cached_input": 0.05,
+        "output": 2.5
+      },
+      "service_tiers": {
+        "batch": 0.5
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Above 100K input tokens: $0.50 in / $2.50 out",
+        "Cache writes $0.125 (5 min) / $0.20 (1 h)",
+        "Web search $10.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "anthropic",
+      "provider_name": "Anthropic",
+      "model": "claude-mythos-5",
+      "aliases": [],
+      "pricing_url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 10,
+        "cached_input": 1,
+        "output": 50,
+        "cache_write_5m": 12.5,
+        "cache_write_1h": 20
+      },
+      "service_tiers": {
+        "batch": 0.5
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Cache writes $12.50 (5 min) / $20.00 (1 h)",
+        "Web search $10.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "anthropic",
+      "provider_name": "Anthropic",
+      "model": "claude-mythos-5-1",
+      "aliases": [],
+      "pricing_url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 10,
+        "cached_input": 0.25,
+        "output": 50,
+        "cache_write_5m": 12.5,
+        "cache_write_1h": 20
+      },
+      "service_tiers": {
+        "batch": 0.5
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Cache writes $12.50 (5 min) / $20.00 (1 h)",
+        "Web search $10.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "anthropic",
+      "provider_name": "Anthropic",
+      "model": "claude-opus-4",
+      "aliases": [
+        "claude-opus-4-20250514"
+      ],
+      "pricing_url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "status": "shut_down",
+      "price_per_million_tokens": {
+        "input": 15,
+        "cached_input": 1.5,
+        "output": 75,
+        "cache_write_5m": 18.75,
+        "cache_write_1h": 30
+      },
+      "service_tiers": {
+        "batch": 0.5
+      },
+      "retirement": {
+        "shutdown_date": "2026-06-15",
+        "earliest_date": false,
+        "replacement": "claude-opus-4-8",
+        "source": "https://platform.claude.com/docs/en/about-claude/model-deprecations"
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Cache writes $18.75 (5 min) / $30.00 (1 h)",
+        "Web search $10.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "anthropic",
+      "provider_name": "Anthropic",
+      "model": "claude-opus-4-1",
+      "aliases": [
+        "claude-opus-4-1-20250805"
+      ],
+      "pricing_url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "status": "shut_down",
+      "price_per_million_tokens": {
+        "input": 15,
+        "cached_input": 1.5,
+        "output": 75,
+        "cache_write_5m": 18.75,
+        "cache_write_1h": 30
+      },
+      "service_tiers": {
+        "batch": 0.5
+      },
+      "retirement": {
+        "shutdown_date": "2026-08-05",
+        "earliest_date": false,
+        "replacement": "claude-opus-4-8",
+        "source": "https://platform.claude.com/docs/en/about-claude/model-deprecations"
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Cache writes $18.75 (5 min) / $30.00 (1 h)",
+        "Web search $10.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "anthropic",
+      "provider_name": "Anthropic",
+      "model": "claude-opus-4-5",
+      "aliases": [
+        "claude-opus-4-5-20251101"
+      ],
+      "pricing_url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 5,
+        "cached_input": 0.5,
+        "output": 25,
+        "cache_write_5m": 6.25,
+        "cache_write_1h": 10
+      },
+      "service_tiers": {
+        "batch": 0.5
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Cache writes $6.25 (5 min) / $10.00 (1 h)",
+        "Web search $10.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "anthropic",
+      "provider_name": "Anthropic",
+      "model": "claude-opus-4-6",
+      "aliases": [],
+      "pricing_url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 5,
+        "cached_input": 0.5,
+        "output": 25,
+        "cache_write_5m": 6.25,
+        "cache_write_1h": 10
+      },
+      "service_tiers": {
+        "batch": 0.5
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Cache writes $6.25 (5 min) / $10.00 (1 h)",
+        "Web search $10.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "anthropic",
+      "provider_name": "Anthropic",
+      "model": "claude-opus-4-7",
+      "aliases": [],
+      "pricing_url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 5,
+        "cached_input": 0.5,
+        "output": 25,
+        "cache_write_5m": 6.25,
+        "cache_write_1h": 10
+      },
+      "service_tiers": {
+        "batch": 0.5
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Cache writes $6.25 (5 min) / $10.00 (1 h)",
+        "Web search $10.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "anthropic",
+      "provider_name": "Anthropic",
+      "model": "claude-opus-4-8",
+      "aliases": [],
+      "pricing_url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 5,
+        "cached_input": 0.5,
+        "output": 25,
+        "cache_write_5m": 6.25,
+        "cache_write_1h": 10
+      },
+      "service_tiers": {
+        "batch": 0.5
+      },
+      "fast_mode_price_per_million_tokens": {
+        "input": 10,
+        "output": 50
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Fast mode $10.00 in / $50.00 out",
+        "Cache writes $6.25 (5 min) / $10.00 (1 h)",
+        "Web search $10.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "anthropic",
+      "provider_name": "Anthropic",
+      "model": "claude-opus-5",
+      "aliases": [],
+      "pricing_url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 5,
+        "cached_input": 0.5,
+        "output": 25,
+        "cache_write_5m": 6.25,
+        "cache_write_1h": 10
+      },
+      "service_tiers": {
+        "batch": 0.5
+      },
+      "fast_mode_price_per_million_tokens": {
+        "input": 10,
+        "output": 50
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Fast mode $10.00 in / $50.00 out",
+        "Cache writes $6.25 (5 min) / $10.00 (1 h)",
+        "Web search $10.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "anthropic",
+      "provider_name": "Anthropic",
+      "model": "claude-opus-5-5",
+      "aliases": [],
+      "pricing_url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 4,
+        "cached_input": 0.2,
+        "output": 20,
+        "cache_write_5m": 5,
+        "cache_write_1h": 8
+      },
+      "service_tiers": {
+        "batch": 0.5
+      },
+      "fast_mode_price_per_million_tokens": {
+        "input": 8,
+        "output": 40
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Fast mode $8.00 in / $40.00 out",
+        "Cache writes $5.00 (5 min) / $8.00 (1 h)",
+        "Web search $10.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "anthropic",
+      "provider_name": "Anthropic",
+      "model": "claude-sonnet-4",
+      "aliases": [
+        "claude-sonnet-4-20250514"
+      ],
+      "pricing_url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "status": "shut_down",
+      "price_per_million_tokens": {
+        "input": 3,
+        "cached_input": 0.3,
+        "output": 15,
+        "cache_write_5m": 3.75,
+        "cache_write_1h": 6
+      },
+      "service_tiers": {
+        "batch": 0.5
+      },
+      "retirement": {
+        "shutdown_date": "2026-06-15",
+        "earliest_date": false,
+        "replacement": "claude-sonnet-5-5",
+        "source": "https://platform.claude.com/docs/en/about-claude/model-deprecations"
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Cache writes $3.75 (5 min) / $6.00 (1 h)",
+        "Web search $10.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "anthropic",
+      "provider_name": "Anthropic",
+      "model": "claude-sonnet-4-5",
+      "aliases": [
+        "claude-sonnet-4-5-20250929"
+      ],
+      "pricing_url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "status": "deprecated",
+      "price_per_million_tokens": {
+        "input": 3,
+        "cached_input": 0.3,
+        "output": 15,
+        "cache_write_5m": 3.75,
+        "cache_write_1h": 6
+      },
+      "service_tiers": {
+        "batch": 0.5
+      },
+      "retirement": {
+        "shutdown_date": "2026-11-30",
+        "earliest_date": false,
+        "replacement": "claude-sonnet-5-5",
+        "source": "https://platform.claude.com/docs/en/about-claude/model-deprecations"
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Cache writes $3.75 (5 min) / $6.00 (1 h)",
+        "Web search $10.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "anthropic",
+      "provider_name": "Anthropic",
+      "model": "claude-sonnet-4-6",
+      "aliases": [],
+      "pricing_url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 3,
+        "cached_input": 0.3,
+        "output": 15,
+        "cache_write_5m": 3.75,
+        "cache_write_1h": 6
+      },
+      "service_tiers": {
+        "batch": 0.5
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Cache writes $3.75 (5 min) / $6.00 (1 h)",
+        "Web search $10.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "anthropic",
+      "provider_name": "Anthropic",
+      "model": "claude-sonnet-5",
+      "aliases": [],
+      "pricing_url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 2,
+        "cached_input": 0.2,
+        "output": 10,
+        "cache_write_5m": 2.5,
+        "cache_write_1h": 4
+      },
+      "service_tiers": {
+        "batch": 0.5
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Cache writes $2.50 (5 min) / $4.00 (1 h)",
+        "Web search $10.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "anthropic",
+      "provider_name": "Anthropic",
+      "model": "claude-sonnet-5-5",
+      "aliases": [],
+      "pricing_url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 2,
+        "cached_input": 0.1,
+        "output": 10,
+        "cache_write_5m": 2.5,
+        "cache_write_1h": 4
+      },
+      "service_tiers": {
+        "batch": 0.5
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Cache writes $2.50 (5 min) / $4.00 (1 h)",
+        "Web search $10.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "baseten",
+      "provider_name": "Baseten",
+      "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "aliases": [],
+      "pricing_url": "https://www.baseten.co/pricing/",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.13,
+        "cached_input": 0.028,
+        "output": 0.26
+      }
+    },
+    {
+      "provider": "baseten",
+      "provider_name": "Baseten",
+      "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "aliases": [],
+      "pricing_url": "https://www.baseten.co/pricing/",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.3,
+        "cached_input": 0.007,
+        "output": 1.2
+      }
+    },
+    {
+      "provider": "baseten",
+      "provider_name": "Baseten",
+      "model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "aliases": [],
+      "pricing_url": "https://www.baseten.co/pricing/",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.3,
+        "cached_input": 0.007,
+        "output": 1.2
+      }
+    },
+    {
+      "provider": "baseten",
+      "provider_name": "Baseten",
+      "model": "deepseek-ai/DeepSeek-V4.1-Flash-Fast",
+      "aliases": [],
+      "pricing_url": "https://www.baseten.co/pricing/",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.6,
+        "cached_input": 0.014,
+        "output": 2.4
+      }
+    },
+    {
+      "provider": "baseten",
+      "provider_name": "Baseten",
+      "model": "deepseek-v4-pro-0813",
+      "aliases": [],
+      "pricing_url": "https://www.baseten.co/pricing/",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 1.32,
+        "cached_input": 0.132,
+        "output": 3.96
+      }
+    },
+    {
+      "provider": "baseten",
+      "provider_name": "Baseten",
+      "model": "meta-models/muse-spark-open",
+      "aliases": [],
+      "pricing_url": "https://www.baseten.co/pricing/",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 1.25,
+        "cached_input": 0.15,
+        "output": 4.25
+      }
+    },
+    {
+      "provider": "baseten",
+      "provider_name": "Baseten",
+      "model": "moonshotai/Kimi-K3",
+      "aliases": [],
+      "pricing_url": "https://www.baseten.co/pricing/",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 3,
+        "cached_input": 0.3,
+        "output": 15
+      }
+    },
+    {
+      "provider": "baseten",
+      "provider_name": "Baseten",
+      "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+      "aliases": [],
+      "pricing_url": "https://www.baseten.co/pricing/",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.6,
+        "cached_input": 0.12,
+        "output": 2.4
+      }
+    },
+    {
+      "provider": "baseten",
+      "provider_name": "Baseten",
+      "model": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B",
+      "aliases": [],
+      "pricing_url": "https://www.baseten.co/pricing/",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.2,
+        "cached_input": 0.04,
+        "output": 0.5
+      }
+    },
+    {
+      "provider": "baseten",
+      "provider_name": "Baseten",
+      "model": "openai/gpt-oss-120b",
+      "aliases": [],
+      "pricing_url": "https://www.baseten.co/pricing/",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.1,
+        "output": 0.5
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "baseten",
+      "provider_name": "Baseten",
+      "model": "reflection/Beam-1.0",
+      "aliases": [],
+      "pricing_url": "https://www.baseten.co/pricing/",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.4,
+        "cached_input": 0.04,
+        "output": 1.2
+      }
+    },
+    {
+      "provider": "baseten",
+      "provider_name": "Baseten",
+      "model": "zai-org/GLM-5.2",
+      "aliases": [],
+      "pricing_url": "https://www.baseten.co/pricing/",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 1.4,
+        "cached_input": 0.14,
+        "output": 4.4
+      }
+    },
+    {
+      "provider": "baseten",
+      "provider_name": "Baseten",
+      "model": "zai-org/GLM-5.2-Fast",
+      "aliases": [],
+      "pricing_url": "https://www.baseten.co/pricing/",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 2.1,
+        "cached_input": 0.21,
+        "output": 6.6
+      }
+    },
+    {
+      "provider": "baseten",
+      "provider_name": "Baseten",
+      "model": "zai-org/GLM-5.3",
+      "aliases": [],
+      "pricing_url": "https://www.baseten.co/pricing/",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 1.4,
+        "cached_input": 0.14,
+        "output": 4.4
+      }
+    },
+    {
+      "provider": "baseten",
+      "provider_name": "Baseten",
+      "model": "zai-org/GLM-5.3-Fast",
+      "aliases": [],
+      "pricing_url": "https://www.baseten.co/pricing/",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 2.1,
+        "cached_input": 0.21,
+        "output": 6.6
+      }
+    },
+    {
+      "provider": "baseten",
+      "provider_name": "Baseten",
+      "model": "zai-org/GLM-5.3-Flash",
+      "aliases": [],
+      "pricing_url": "https://www.baseten.co/pricing/",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.15,
+        "cached_input": 0.03,
+        "output": 0.5
+      }
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "deepseek-ai/DeepSeek-R1-0528",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.5,
+        "cached_input": 0.35,
+        "output": 2.15
+      }
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "deepseek-ai/DeepSeek-V3",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.32,
+        "output": 0.89
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "deepseek-ai/DeepSeek-V3.1",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.25,
+        "cached_input": 0.13,
+        "output": 0.95
+      }
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "deepseek-ai/DeepSeek-V3.2",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.26,
+        "cached_input": 0.13,
+        "output": 0.38
+      }
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "deepseek-ai/DeepSeek-V4-Flash",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.09,
+        "cached_input": 0.018,
+        "output": 0.18
+      }
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.06,
+        "cached_input": 0.015,
+        "output": 0.18
+      }
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "deepseek-ai/DeepSeek-V4-Pro",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 1.3,
+        "cached_input": 0.1,
+        "output": 2.6
+      }
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "google/gemma-3-12b-it",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.05,
+        "output": 0.15
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "google/gemma-3-27b-it",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.08,
+        "output": 0.16
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "google/gemma-3-4b-it",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.05,
+        "output": 0.1
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "google/gemma-4-26B-A4B-it",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.07,
+        "output": 0.34
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "google/gemma-4-31B-it",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.2,
+        "output": 0.4
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "google/gemma-4-31B-it-turbo",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.09,
+        "cached_input": 0.05,
+        "output": 0.34
+      }
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "google/gemma-4-31B-it-Ultra",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.27,
+        "output": 0.76
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.1,
+        "output": 0.32
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.1,
+        "output": 0.3
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.02,
+        "output": 0.04
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "microsoft/phi-4",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.07,
+        "output": 0.14
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.029,
+        "output": 0.03
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "mistralai/Mistral-Small-24B-Instruct-2501",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.05,
+        "output": 0.08
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.075,
+        "output": 0.2
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "moonshotai/Kimi-K2.6",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.75,
+        "cached_input": 0.15,
+        "output": 3.5
+      }
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "moonshotai/Kimi-K3",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 2.85,
+        "cached_input": 0.285,
+        "output": 14.25
+      }
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.085,
+        "output": 0.4
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.5,
+        "cached_input": 0.1,
+        "output": 2.2
+      }
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.06,
+        "cached_input": 0.03,
+        "output": 0.16
+      }
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "nvidia/NVIDIA-Nemotron-3.5-Super-VL",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.15,
+        "cached_input": 0.02,
+        "output": 0.5
+      }
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "Qwen/Qwen2.5-72B-Instruct",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.36,
+        "output": 0.4
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "Qwen/Qwen3-14B",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.12,
+        "output": 0.24
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.09,
+        "output": 0.55
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "Qwen/Qwen3-30B-A3B",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.12,
+        "output": 0.5
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "Qwen/Qwen3-32B",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.08,
+        "output": 0.28
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "Qwen/Qwen3-Coder-480B-A35B-Instruct-Turbo",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.3,
+        "cached_input": 0.1,
+        "output": 1
+      }
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "Qwen/Qwen3-Next-80B-A3B-Instruct",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.09,
+        "output": 1.1
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "Qwen/Qwen3-VL-235B-A22B-Instruct",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.2,
+        "cached_input": 0.11,
+        "output": 0.88
+      }
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "Qwen/Qwen3-VL-30B-A3B-Instruct",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.15,
+        "output": 0.6
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "Qwen/Qwen3.5-27B",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.26,
+        "output": 2.6
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "Qwen/Qwen3.5-35B-A3B",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.14,
+        "cached_input": 0.05,
+        "output": 1
+      }
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "Qwen/Qwen3.5-397B-A17B",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.45,
+        "cached_input": 0.22,
+        "output": 3
+      }
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "Qwen/Qwen3.5-9B",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.1,
+        "output": 0.15
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "Qwen/Qwen3.6-27B",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.32,
+        "output": 3.2
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "Qwen/Qwen3.6-35B-A3B",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.1,
+        "output": 0.95
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "Qwen/Qwen3.7-Max",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 2.5,
+        "cached_input": 0.5,
+        "output": 7.5
+      }
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "Qwen/Qwen3.8-Max",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 1.65,
+        "cached_input": 0.206,
+        "output": 4.951
+      }
+    },
+    {
+      "provider": "fireworks",
+      "provider_name": "Fireworks",
+      "model": "accounts/fireworks/models/deepseek-v4p1-flash",
+      "aliases": [],
+      "pricing_url": "https://docs.fireworks.ai/serverless/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.3,
+        "cached_input": 0.006,
+        "output": 1.2
+      }
+    },
+    {
+      "provider": "fireworks",
+      "provider_name": "Fireworks",
+      "model": "accounts/fireworks/models/deepseek-v4p1-flash-1017",
+      "aliases": [],
+      "pricing_url": "https://docs.fireworks.ai/serverless/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.3,
+        "cached_input": 0.006,
+        "output": 1.2
+      }
+    },
+    {
+      "provider": "fireworks",
+      "provider_name": "Fireworks",
+      "model": "accounts/fireworks/models/glm-5p3",
+      "aliases": [],
+      "pricing_url": "https://docs.fireworks.ai/serverless/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 1.4,
+        "cached_input": 0.26,
+        "output": 4.4
+      }
+    },
+    {
+      "provider": "fireworks",
+      "provider_name": "Fireworks",
+      "model": "accounts/fireworks/models/glm-5p3-flash",
+      "aliases": [],
+      "pricing_url": "https://docs.fireworks.ai/serverless/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.15,
+        "cached_input": 0.03,
+        "output": 0.5
+      }
+    },
+    {
+      "provider": "fireworks",
+      "provider_name": "Fireworks",
+      "model": "accounts/fireworks/models/gpt-oss-120b",
+      "aliases": [],
+      "pricing_url": "https://docs.fireworks.ai/serverless/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.15,
+        "cached_input": 0.015,
+        "output": 0.6
+      }
+    },
+    {
+      "provider": "fireworks",
+      "provider_name": "Fireworks",
+      "model": "accounts/fireworks/models/kimi-k3",
+      "aliases": [],
+      "pricing_url": "https://docs.fireworks.ai/serverless/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 3,
+        "cached_input": 0.3,
+        "output": 15
+      }
+    },
+    {
+      "provider": "fireworks",
+      "provider_name": "Fireworks",
+      "model": "accounts/fireworks/models/minimax-m3",
+      "aliases": [],
+      "pricing_url": "https://docs.fireworks.ai/serverless/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.3,
+        "cached_input": 0.06,
+        "output": 1.2
+      }
+    },
+    {
+      "provider": "fireworks",
+      "provider_name": "Fireworks",
+      "model": "accounts/fireworks/models/muse-spark-open",
+      "aliases": [],
+      "pricing_url": "https://docs.fireworks.ai/serverless/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 1.25,
+        "cached_input": 0.15,
+        "output": 4.25
+      }
+    },
+    {
+      "provider": "fireworks",
+      "provider_name": "Fireworks",
+      "model": "accounts/fireworks/models/nemotron-3-ultra-nvfp4",
+      "aliases": [],
+      "pricing_url": "https://docs.fireworks.ai/serverless/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.6,
+        "cached_input": 0.12,
+        "output": 2.4
+      }
+    },
+    {
+      "provider": "fireworks",
+      "provider_name": "Fireworks",
+      "model": "accounts/fireworks/models/nemotron-lightning-3p5-30b-a3b",
+      "aliases": [],
+      "pricing_url": "https://docs.fireworks.ai/serverless/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.05,
+        "cached_input": 0.01,
+        "output": 0.2
+      }
+    },
+    {
+      "provider": "fireworks",
+      "provider_name": "Fireworks",
+      "model": "accounts/fireworks/models/qwen3p8-max",
+      "aliases": [],
+      "pricing_url": "https://docs.fireworks.ai/serverless/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 2,
+        "cached_input": 0.25,
+        "output": 6
+      }
+    },
+    {
+      "provider": "google",
+      "provider_name": "Google Gemini",
+      "model": "gemini-2.5-flash",
+      "aliases": [],
+      "pricing_url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.3,
+        "cached_input": 0.03,
+        "output": 2.5
+      },
+      "service_tiers": {
+        "batch": {
+          "input": 0.5,
+          "cached_input": 1,
+          "output": 0.5
+        },
+        "flex": {
+          "input": 0.5,
+          "cached_input": 1,
+          "output": 0.5
+        },
+        "priority": 1.8
+      },
+      "notes": [
+        "Batch at 50% off, cached input $0.03",
+        "Flex at 50% off",
+        "Priority at 1.8×",
+        "Search grounding $35.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "google",
+      "provider_name": "Google Gemini",
+      "model": "gemini-2.5-flash-lite",
+      "aliases": [],
+      "pricing_url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.1,
+        "cached_input": 0.01,
+        "output": 0.4
+      },
+      "service_tiers": {
+        "batch": {
+          "input": 0.5,
+          "cached_input": 1,
+          "output": 0.5
+        },
+        "flex": {
+          "input": 0.5,
+          "cached_input": 1,
+          "output": 0.5
+        },
+        "priority": 1.8
+      },
+      "notes": [
+        "Batch at 50% off, cached input $0.01",
+        "Flex at 50% off",
+        "Priority at 1.8×",
+        "Search grounding $35.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "google",
+      "provider_name": "Google Gemini",
+      "model": "gemini-2.5-pro",
+      "aliases": [],
+      "pricing_url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 1.25,
+        "cached_input": 0.125,
+        "output": 10
+      },
+      "long_prompt": {
+        "over_input_tokens": 200000,
+        "input": 2.5,
+        "cached_input": 0.25,
+        "output": 15
+      },
+      "service_tiers": {
+        "batch": {
+          "input": 0.5,
+          "cached_input": 1,
+          "output": 0.5
+        },
+        "flex": {
+          "input": 0.5,
+          "cached_input": 1,
+          "output": 0.5
+        },
+        "priority": 1.8
+      },
+      "notes": [
+        "Batch at 50% off, cached input $0.125",
+        "Flex at 50% off",
+        "Priority at 1.8×",
+        "Above 200K input tokens: $2.50 in / $15.00 out",
+        "Search grounding $35.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "google",
+      "provider_name": "Google Gemini",
+      "model": "gemini-3-flash-preview",
+      "aliases": [],
+      "pricing_url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.5,
+        "cached_input": 0.05,
+        "output": 3
+      },
+      "service_tiers": {
+        "batch": {
+          "input": 0.5,
+          "cached_input": 1,
+          "output": 0.5
+        },
+        "flex": {
+          "input": 0.5,
+          "cached_input": 1,
+          "output": 0.5
+        },
+        "priority": 1.8
+      },
+      "notes": [
+        "Batch at 50% off, cached input $0.05",
+        "Flex at 50% off",
+        "Priority at 1.8×",
+        "Search grounding $14.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "google",
+      "provider_name": "Google Gemini",
+      "model": "gemini-3.1-flash-lite",
+      "aliases": [],
+      "pricing_url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "status": "deprecated",
+      "price_per_million_tokens": {
+        "input": 0.25,
+        "cached_input": 0.025,
+        "output": 1.5
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 1.8
+      },
+      "retirement": {
+        "shutdown_date": "2027-05-07",
+        "earliest_date": true,
+        "replacement": "gemini-3.5-flash-lite",
+        "source": "https://ai.google.dev/gemini-api/docs/deprecations"
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Priority at 1.8×",
+        "Search grounding $14.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "google",
+      "provider_name": "Google Gemini",
+      "model": "gemini-3.1-pro-preview",
+      "aliases": [],
+      "pricing_url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 2,
+        "cached_input": 0.2,
+        "output": 12
+      },
+      "long_prompt": {
+        "over_input_tokens": 200000,
+        "input": 4,
+        "cached_input": 0.4,
+        "output": 18
+      },
+      "service_tiers": {
+        "batch": {
+          "input": 0.5,
+          "cached_input": 1,
+          "output": 0.5
+        },
+        "flex": {
+          "input": 0.5,
+          "cached_input": 1,
+          "output": 0.5
+        },
+        "priority": 1.8
+      },
+      "notes": [
+        "Batch at 50% off, cached input $0.20",
+        "Flex at 50% off",
+        "Priority at 1.8×",
+        "Above 200K input tokens: $4.00 in / $18.00 out",
+        "Search grounding $14.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "google",
+      "provider_name": "Google Gemini",
+      "model": "gemini-3.1-pro-preview-customtools",
+      "aliases": [],
+      "pricing_url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 2,
+        "cached_input": 0.2,
+        "output": 12
+      },
+      "long_prompt": {
+        "over_input_tokens": 200000,
+        "input": 4,
+        "cached_input": 0.4,
+        "output": 18
+      },
+      "service_tiers": {
+        "batch": {
+          "input": 0.5,
+          "cached_input": 1,
+          "output": 0.5
+        },
+        "flex": {
+          "input": 0.5,
+          "cached_input": 1,
+          "output": 0.5
+        },
+        "priority": 1.8
+      },
+      "notes": [
+        "Batch at 50% off, cached input $0.20",
+        "Flex at 50% off",
+        "Priority at 1.8×",
+        "Above 200K input tokens: $4.00 in / $18.00 out",
+        "Search grounding $14.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "google",
+      "provider_name": "Google Gemini",
+      "model": "gemini-3.5-flash",
+      "aliases": [],
+      "pricing_url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 1.5,
+        "cached_input": 0.15,
+        "output": 9
+      },
+      "notes": [
+        "Search grounding $14.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "google",
+      "provider_name": "Google Gemini",
+      "model": "gemini-3.5-flash-lite",
+      "aliases": [],
+      "pricing_url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.3,
+        "cached_input": 0.03,
+        "output": 2.5
+      },
+      "service_tiers": {
+        "batch": {
+          "input": 0.5,
+          "cached_input": 0.6666666666666666,
+          "output": 0.5
+        },
+        "flex": {
+          "input": 0.5,
+          "cached_input": 0.6666666666666666,
+          "output": 0.5
+        },
+        "priority": {
+          "input": 1.8,
+          "cached_input": 1.6666666666666667,
+          "output": 1.8
+        }
+      },
+      "notes": [
+        "Batch at 50% off, cached input $0.02",
+        "Flex at 50% off",
+        "Priority at 1.8×",
+        "Search grounding $14.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "google",
+      "provider_name": "Google Gemini",
+      "model": "gemini-3.6-flash",
+      "aliases": [],
+      "pricing_url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.75,
+        "cached_input": 0.075,
+        "output": 3.75
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 1.8
+      },
+      "scheduled_changes": [
+        {
+          "effective": "2027-01-01",
+          "input": 1.5,
+          "cached_input": 0.15,
+          "output": 7.5
+        }
+      ],
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Priority at 1.8×",
+        "Search grounding $14.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "google",
+      "provider_name": "Google Gemini",
+      "model": "gemini-3.8-flash",
+      "aliases": [],
+      "pricing_url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.75,
+        "cached_input": 0.075,
+        "output": 3.75
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 1.8
+      },
+      "scheduled_changes": [
+        {
+          "effective": "2027-01-01",
+          "input": 1.5,
+          "cached_input": 0.15,
+          "output": 7.5
+        }
+      ],
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Priority at 1.8×",
+        "Search grounding $14.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "google",
+      "provider_name": "Google Gemini",
+      "model": "gemini-4-argon",
+      "aliases": [],
+      "pricing_url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 2,
+        "cached_input": 0.1,
+        "output": 10
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 1.8
+      },
+      "scheduled_changes": [
+        {
+          "effective": "2026-12-01",
+          "input": 4,
+          "cached_input": 0.2,
+          "output": 20
+        }
+      ],
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Priority at 1.8×",
+        "Search grounding $14.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "google",
+      "provider_name": "Google Gemini",
+      "model": "gemini-flash-latest",
+      "aliases": [],
+      "pricing_url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.75,
+        "cached_input": 0.075,
+        "output": 3.75
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 1.8
+      },
+      "scheduled_changes": [
+        {
+          "effective": "2027-01-01",
+          "input": 1.5,
+          "cached_input": 0.15,
+          "output": 7.5
+        }
+      ],
+      "notes": [
+        "Alias of gemini-3.8-flash",
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Priority at 1.8×",
+        "Search grounding $14.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-4.1",
+      "aliases": [
+        "gpt-4.1-2025-04-14"
+      ],
+      "pricing_url": "https://openai.com/api/pricing/",
+      "status": "deprecated",
+      "price_per_million_tokens": {
+        "input": 2,
+        "cached_input": 0.5,
+        "output": 8
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "priority": 1.75,
+        "fast_mode": 1.75
+      },
+      "retirement": {
+        "shutdown_date": "2027-01-14",
+        "earliest_date": false,
+        "replacement": "gpt-6-luna",
+        "source": "https://developers.openai.com/api/docs/deprecations"
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Fast mode at 1.75×"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-4.1-mini",
+      "aliases": [
+        "gpt-4.1-mini-2025-04-14"
+      ],
+      "pricing_url": "https://openai.com/api/pricing/",
+      "status": "deprecated",
+      "price_per_million_tokens": {
+        "input": 0.4,
+        "cached_input": 0.1,
+        "output": 1.6
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "priority": 1.75,
+        "fast_mode": 1.75
+      },
+      "retirement": {
+        "shutdown_date": "2027-01-14",
+        "earliest_date": false,
+        "replacement": "gpt-6-luna",
+        "source": "https://developers.openai.com/api/docs/deprecations"
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Fast mode at 1.75×"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-4.1-nano",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "shut_down",
+      "price_per_million_tokens": {
+        "input": 0.1,
+        "cached_input": 0.025,
+        "output": 0.4
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "priority": 2,
+        "fast_mode": 2
+      },
+      "retirement": {
+        "shutdown_date": "2026-10-23",
+        "earliest_date": false,
+        "replacement": "gpt-5.6-luna",
+        "source": "https://developers.openai.com/api/docs/deprecations"
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Fast mode at 2×"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-4o",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "deprecated",
+      "price_per_million_tokens": {
+        "input": 2.5,
+        "cached_input": 1.25,
+        "output": 10
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "priority": 1.7,
+        "fast_mode": 1.7
+      },
+      "retirement": {
+        "shutdown_date": "2027-01-14",
+        "earliest_date": false,
+        "replacement": "gpt-6-luna",
+        "source": "https://developers.openai.com/api/docs/deprecations"
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Fast mode at 1.7×"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-4o-mini",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "deprecated",
+      "price_per_million_tokens": {
+        "input": 0.15,
+        "cached_input": 0.075,
+        "output": 0.6
+      },
+      "service_tiers": {
+        "batch": 0.5
+      },
+      "retirement": {
+        "shutdown_date": "2027-01-14",
+        "earliest_date": false,
+        "replacement": "gpt-6-luna",
+        "source": "https://developers.openai.com/api/docs/deprecations"
+      },
+      "notes": [
+        "Batch at 50% off"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5",
+      "aliases": [
+        "gpt-5-2025-08-07"
+      ],
+      "pricing_url": "https://openai.com/api/pricing/",
+      "status": "deprecated",
+      "price_per_million_tokens": {
+        "input": 1.25,
+        "cached_input": 0.125,
+        "output": 10
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 2,
+        "fast_mode": 2
+      },
+      "retirement": {
+        "shutdown_date": "2026-12-11",
+        "earliest_date": false,
+        "replacement": "gpt-5.6-sol",
+        "source": "https://developers.openai.com/api/docs/deprecations"
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Fast mode at 2×"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5-mini",
+      "aliases": [
+        "gpt-5-mini-2025-08-07"
+      ],
+      "pricing_url": "https://openai.com/api/pricing/",
+      "status": "deprecated",
+      "price_per_million_tokens": {
+        "input": 0.25,
+        "cached_input": 0.025,
+        "output": 2
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 1.8,
+        "fast_mode": 1.8
+      },
+      "retirement": {
+        "shutdown_date": "2026-12-11",
+        "earliest_date": false,
+        "replacement": "gpt-5.6-terra",
+        "source": "https://developers.openai.com/api/docs/deprecations"
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Fast mode at 1.8×"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5-nano",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "deprecated",
+      "price_per_million_tokens": {
+        "input": 0.05,
+        "cached_input": 0.005,
+        "output": 0.4
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5
+      },
+      "retirement": {
+        "shutdown_date": "2026-12-11",
+        "earliest_date": false,
+        "replacement": "gpt-5.6-luna",
+        "source": "https://developers.openai.com/api/docs/deprecations"
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5-pro",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "deprecated",
+      "price_per_million_tokens": {
+        "input": 15,
+        "output": 120
+      },
+      "service_tiers": {
+        "batch": 0.5
+      },
+      "retirement": {
+        "shutdown_date": "2026-12-11",
+        "earliest_date": false,
+        "replacement": "gpt-5.6-sol (reasoning.mode: pro)",
+        "source": "https://developers.openai.com/api/docs/deprecations"
+      },
+      "notes": [
+        "Batch at 50% off"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.1",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "deprecated",
+      "price_per_million_tokens": {
+        "input": 1.25,
+        "cached_input": 0.125,
+        "output": 10
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 2,
+        "fast_mode": 2
+      },
+      "retirement": {
+        "shutdown_date": "2027-04-01",
+        "earliest_date": false,
+        "replacement": "gpt-6-sol",
+        "source": "https://developers.openai.com/api/docs/deprecations"
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Fast mode at 2×"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.2",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 1.75,
+        "cached_input": 0.175,
+        "output": 14
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 2,
+        "fast_mode": 2
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Fast mode at 2×"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.2-pro",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 21,
+        "output": 168
+      },
+      "service_tiers": {
+        "batch": 0.5
+      },
+      "notes": [
+        "Batch at 50% off"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.3-codex",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "deprecated",
+      "price_per_million_tokens": {
+        "input": 1.75,
+        "cached_input": 0.175,
+        "output": 14
+      },
+      "service_tiers": {
+        "priority": 2,
+        "fast_mode": 2
+      },
+      "retirement": {
+        "shutdown_date": "2027-04-01",
+        "earliest_date": false,
+        "replacement": "gpt-6-sol",
+        "source": "https://developers.openai.com/api/docs/deprecations"
+      },
+      "notes": [
+        "Fast mode at 2×"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.4",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 2.5,
+        "cached_input": 0.25,
+        "output": 15
+      },
+      "long_prompt": {
+        "over_input_tokens": 272000,
+        "input": 5,
+        "cached_input": 0.5,
+        "output": 22.5
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 2,
+        "fast_mode": 2
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Fast mode at 2×",
+        "Above 272K input tokens: $5.00 in / $22.50 out"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.4-mini",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.75,
+        "cached_input": 0.075,
+        "output": 4.5
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 2,
+        "fast_mode": 2
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Fast mode at 2×"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.4-nano",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "deprecated",
+      "price_per_million_tokens": {
+        "input": 0.2,
+        "cached_input": 0.02,
+        "output": 1.25
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5
+      },
+      "retirement": {
+        "shutdown_date": "2027-04-01",
+        "earliest_date": false,
+        "replacement": "gpt-6-luna",
+        "source": "https://developers.openai.com/api/docs/deprecations"
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.4-pro",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 30,
+        "output": 180
+      },
+      "long_prompt": {
+        "over_input_tokens": 272000,
+        "input": 60,
+        "cached_input": 60,
+        "output": 270
+      },
+      "service_tiers": {
+        "batch": 0.5
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Above 272K input tokens: $60.00 in / $270.00 out"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.5",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 5,
+        "cached_input": 0.5,
+        "output": 30
+      },
+      "long_prompt": {
+        "over_input_tokens": 272000,
+        "input": 10,
+        "cached_input": 1,
+        "output": 45
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 2.5,
+        "fast_mode": 2.5
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Fast mode at 2.5×",
+        "Above 272K input tokens: $10.00 in / $45.00 out"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.5-pro",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 30,
+        "output": 180
+      },
+      "long_prompt": {
+        "over_input_tokens": 272000,
+        "input": 60,
+        "cached_input": 60,
+        "output": 270
+      },
+      "service_tiers": {
+        "batch": 0.5
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Above 272K input tokens: $60.00 in / $270.00 out"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.6-luna",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.2,
+        "cached_input": 0.02,
+        "output": 1.2,
+        "cache_write": 0.25
+      },
+      "long_prompt": {
+        "over_input_tokens": 272000,
+        "input": 0.4,
+        "cached_input": 0.04,
+        "output": 1.8
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 2,
+        "fast_mode": 2
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Fast mode at 2×",
+        "Above 272K input tokens: $0.40 in / $1.80 out",
+        "Cache writes $0.25"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.6-sol",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 4,
+        "cached_input": 0.4,
+        "output": 20,
+        "cache_write": 5
+      },
+      "long_prompt": {
+        "over_input_tokens": 272000,
+        "input": 8,
+        "cached_input": 0.8,
+        "output": 30
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 2,
+        "fast_mode": 2
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Fast mode at 2×",
+        "Above 272K input tokens: $8.00 in / $30.00 out",
+        "Cache writes $5.00"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.6-terra",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 2,
+        "cached_input": 0.2,
+        "output": 12,
+        "cache_write": 2.5
+      },
+      "long_prompt": {
+        "over_input_tokens": 272000,
+        "input": 4,
+        "cached_input": 0.4,
+        "output": 18
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 2,
+        "fast_mode": 2
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Fast mode at 2×",
+        "Above 272K input tokens: $4.00 in / $18.00 out",
+        "Cache writes $2.50"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-6-astra",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 10,
+        "cached_input": 1,
+        "output": 50,
+        "cache_write": 12.5
+      },
+      "long_prompt": {
+        "over_input_tokens": 272000,
+        "input": 20,
+        "cached_input": 2,
+        "output": 75
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 2,
+        "fast_mode": 2,
+        "ultrafast": 6
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Fast mode at 2×",
+        "Above 272K input tokens: $20.00 in / $75.00 out",
+        "Cache writes $12.50"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-6-luna",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.1,
+        "cached_input": 0.01,
+        "output": 0.5,
+        "cache_write": 0.125
+      },
+      "long_prompt": {
+        "over_input_tokens": 272000,
+        "input": 0.2,
+        "cached_input": 0.02,
+        "output": 0.75
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 2,
+        "fast_mode": 2
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Fast mode at 2×",
+        "Above 272K input tokens: $0.20 in / $0.75 out",
+        "Cache writes $0.125"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-6-sol",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 2,
+        "cached_input": 0.2,
+        "output": 10,
+        "cache_write": 2.5
+      },
+      "long_prompt": {
+        "over_input_tokens": 272000,
+        "input": 4,
+        "cached_input": 0.4,
+        "output": 15
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 2,
+        "fast_mode": 2
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Fast mode at 2×",
+        "Above 272K input tokens: $4.00 in / $15.00 out",
+        "Cache writes $2.50"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-6.1-sol",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 2,
+        "cached_input": 0.1,
+        "output": 10,
+        "cache_write": 2.5
+      },
+      "long_prompt": {
+        "over_input_tokens": 272000,
+        "input": 4,
+        "cached_input": 0.2,
+        "output": 15
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 2,
+        "fast_mode": 2,
+        "ultrafast": 6
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Fast mode at 2×",
+        "Above 272K input tokens: $4.00 in / $15.00 out",
+        "Cache writes $2.50"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-6.1-terra",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 1,
+        "cached_input": 0.05,
+        "output": 5,
+        "cache_write": 1.25
+      },
+      "long_prompt": {
+        "over_input_tokens": 272000,
+        "input": 2,
+        "cached_input": 0.1,
+        "output": 7.5
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 2,
+        "fast_mode": 2
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Fast mode at 2×",
+        "Above 272K input tokens: $2.00 in / $7.50 out",
+        "Cache writes $1.25"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "o1",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "shut_down",
+      "price_per_million_tokens": {
+        "input": 15,
+        "cached_input": 7.5,
+        "output": 60
+      },
+      "service_tiers": {
+        "batch": 0.5
+      },
+      "retirement": {
+        "shutdown_date": "2026-10-23",
+        "earliest_date": false,
+        "replacement": "gpt-5.6-sol",
+        "source": "https://developers.openai.com/api/docs/deprecations"
+      },
+      "notes": [
+        "Batch at 50% off"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "o1-pro",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "shut_down",
+      "price_per_million_tokens": {
+        "input": 150,
+        "output": 600
+      },
+      "service_tiers": {
+        "batch": 0.5
+      },
+      "retirement": {
+        "shutdown_date": "2026-10-23",
+        "earliest_date": false,
+        "replacement": "gpt-5.6-sol (reasoning.mode: pro)",
+        "source": "https://developers.openai.com/api/docs/deprecations"
+      },
+      "notes": [
+        "Batch at 50% off"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "o3",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "deprecated",
+      "price_per_million_tokens": {
+        "input": 2,
+        "cached_input": 0.5,
+        "output": 8
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5,
+        "priority": 1.75,
+        "fast_mode": 1.75
+      },
+      "retirement": {
+        "shutdown_date": "2026-12-11",
+        "earliest_date": false,
+        "replacement": "gpt-5.6-sol",
+        "source": "https://developers.openai.com/api/docs/deprecations"
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off",
+        "Fast mode at 1.75×"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "o3-mini",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "shut_down",
+      "price_per_million_tokens": {
+        "input": 1.1,
+        "cached_input": 0.55,
+        "output": 4.4
+      },
+      "service_tiers": {
+        "batch": 0.5
+      },
+      "retirement": {
+        "shutdown_date": "2026-10-23",
+        "earliest_date": false,
+        "replacement": "gpt-5.6-sol",
+        "source": "https://developers.openai.com/api/docs/deprecations"
+      },
+      "notes": [
+        "Batch at 50% off"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "o3-pro",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "deprecated",
+      "price_per_million_tokens": {
+        "input": 20,
+        "output": 80
+      },
+      "service_tiers": {
+        "batch": 0.5
+      },
+      "retirement": {
+        "shutdown_date": "2026-12-11",
+        "earliest_date": false,
+        "replacement": "gpt-5.6-sol (reasoning.mode: pro)",
+        "source": "https://developers.openai.com/api/docs/deprecations"
+      },
+      "notes": [
+        "Batch at 50% off"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "o4-mini",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "shut_down",
+      "price_per_million_tokens": {
+        "input": 1.1,
+        "cached_input": 0.275,
+        "output": 4.4
+      },
+      "service_tiers": {
+        "batch": 0.5,
+        "flex": 0.5
+      },
+      "retirement": {
+        "shutdown_date": "2026-10-23",
+        "earliest_date": false,
+        "replacement": "gpt-5.6-terra",
+        "source": "https://developers.openai.com/api/docs/deprecations"
+      },
+      "notes": [
+        "Batch at 50% off",
+        "Flex at 50% off"
+      ]
+    },
+    {
+      "provider": "perplexity",
+      "provider_name": "Perplexity",
+      "model": "sonar",
+      "aliases": [],
+      "pricing_url": "https://docs.perplexity.ai/docs/getting-started/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 1,
+        "output": 1
+      },
+      "notes": [
+        "Request fee from $5.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "perplexity",
+      "provider_name": "Perplexity",
+      "model": "sonar-pro",
+      "aliases": [],
+      "pricing_url": "https://docs.perplexity.ai/docs/getting-started/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 3,
+        "output": 15
+      },
+      "notes": [
+        "Request fee from $6.00 per 1,000"
+      ]
+    },
+    {
+      "provider": "together",
+      "provider_name": "Together AI",
+      "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+      "aliases": [],
+      "pricing_url": "https://www.together.ai/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 1.32,
+        "cached_input": 0.13,
+        "output": 3.96
+      }
+    },
+    {
+      "provider": "together",
+      "provider_name": "Together AI",
+      "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "aliases": [],
+      "pricing_url": "https://www.together.ai/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.3,
+        "cached_input": 0.006,
+        "output": 1.2
+      }
+    },
+    {
+      "provider": "together",
+      "provider_name": "Together AI",
+      "model": "meta-models/Muse-Spark-Open-816B-A42B",
+      "aliases": [],
+      "pricing_url": "https://www.together.ai/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 1.25,
+        "cached_input": 0.15,
+        "output": 4.25
+      }
+    },
+    {
+      "provider": "together",
+      "provider_name": "Together AI",
+      "model": "MiniMaxAI/MiniMax-M3.1-Flash",
+      "aliases": [],
+      "pricing_url": "https://www.together.ai/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.15,
+        "cached_input": 0.015,
+        "output": 0.6
+      }
+    },
+    {
+      "provider": "together",
+      "provider_name": "Together AI",
+      "model": "moonshotai/Kimi-K3",
+      "aliases": [],
+      "pricing_url": "https://www.together.ai/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 3,
+        "cached_input": 0.3,
+        "output": 15
+      }
+    },
+    {
+      "provider": "together",
+      "provider_name": "Together AI",
+      "model": "nvidia/NVIDIA-Nemotron-3.5-Super-VL",
+      "aliases": [],
+      "pricing_url": "https://www.together.ai/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.15,
+        "cached_input": 0.02,
+        "output": 0.5
+      }
+    },
+    {
+      "provider": "together",
+      "provider_name": "Together AI",
+      "model": "openai/gpt-oss-120b",
+      "aliases": [],
+      "pricing_url": "https://www.together.ai/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.15,
+        "output": 0.6
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "together",
+      "provider_name": "Together AI",
+      "model": "Qwen/Qwen3.5-9B",
+      "aliases": [],
+      "pricing_url": "https://www.together.ai/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.17,
+        "output": 0.25
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "together",
+      "provider_name": "Together AI",
+      "model": "Qwen/Qwen3.8-Flash",
+      "aliases": [],
+      "pricing_url": "https://www.together.ai/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.15,
+        "output": 0.47
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "together",
+      "provider_name": "Together AI",
+      "model": "zai-org/GLM-5.3",
+      "aliases": [],
+      "pricing_url": "https://www.together.ai/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 1.4,
+        "cached_input": 0.26,
+        "output": 4.4
+      }
+    },
+    {
+      "provider": "together",
+      "provider_name": "Together AI",
+      "model": "zai-org/GLM-5.3-Flash",
+      "aliases": [],
+      "pricing_url": "https://www.together.ai/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.15,
+        "cached_input": 0.03,
+        "output": 0.5
+      }
+    }
+  ]
+}

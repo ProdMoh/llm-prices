@@ -1,0 +1,635 @@
+{
+  "schema_version": 1,
+  "generated": "2026-11-02",
+  "currency": "USD",
+  "unit": "per 1M tokens",
+  "license": "CC-BY-4.0",
+  "attribution": "Ganivra (https://ganivra.com/supported-models)",
+  "repository": "https://github.com/ProdMoh/llm-prices",
+  "models": [
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "deepseek-ai/DeepSeek-R1-0528",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.5,
+        "cached_input": 0.35,
+        "output": 2.15
+      }
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "deepseek-ai/DeepSeek-V3",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.32,
+        "output": 0.89
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "deepseek-ai/DeepSeek-V3.1",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.25,
+        "cached_input": 0.13,
+        "output": 0.95
+      }
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "deepseek-ai/DeepSeek-V3.2",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.26,
+        "cached_input": 0.13,
+        "output": 0.38
+      }
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "deepseek-ai/DeepSeek-V4-Flash",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.09,
+        "cached_input": 0.018,
+        "output": 0.18
+      }
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.06,
+        "cached_input": 0.015,
+        "output": 0.18
+      }
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "deepseek-ai/DeepSeek-V4-Pro",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 1.3,
+        "cached_input": 0.1,
+        "output": 2.6
+      }
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "google/gemma-3-12b-it",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.05,
+        "output": 0.15
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "google/gemma-3-27b-it",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.08,
+        "output": 0.16
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "google/gemma-3-4b-it",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.05,
+        "output": 0.1
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "google/gemma-4-26B-A4B-it",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.07,
+        "output": 0.34
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "google/gemma-4-31B-it",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.2,
+        "output": 0.4
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "google/gemma-4-31B-it-turbo",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.09,
+        "cached_input": 0.05,
+        "output": 0.34
+      }
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "google/gemma-4-31B-it-Ultra",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.27,
+        "output": 0.76
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.1,
+        "output": 0.32
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.1,
+        "output": 0.3
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.02,
+        "output": 0.04
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "microsoft/phi-4",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.07,
+        "output": 0.14
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.029,
+        "output": 0.03
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "mistralai/Mistral-Small-24B-Instruct-2501",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.05,
+        "output": 0.08
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.075,
+        "output": 0.2
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "moonshotai/Kimi-K2.6",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.75,
+        "cached_input": 0.15,
+        "output": 3.5
+      }
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "moonshotai/Kimi-K3",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 2.85,
+        "cached_input": 0.285,
+        "output": 14.25
+      }
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.085,
+        "output": 0.4
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.5,
+        "cached_input": 0.1,
+        "output": 2.2
+      }
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.06,
+        "cached_input": 0.03,
+        "output": 0.16
+      }
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "nvidia/NVIDIA-Nemotron-3.5-Super-VL",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.15,
+        "cached_input": 0.02,
+        "output": 0.5
+      }
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "Qwen/Qwen2.5-72B-Instruct",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.36,
+        "output": 0.4
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "Qwen/Qwen3-14B",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.12,
+        "output": 0.24
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.09,
+        "output": 0.55
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "Qwen/Qwen3-30B-A3B",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.12,
+        "output": 0.5
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "Qwen/Qwen3-32B",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.08,
+        "output": 0.28
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "Qwen/Qwen3-Coder-480B-A35B-Instruct-Turbo",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.3,
+        "cached_input": 0.1,
+        "output": 1
+      }
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "Qwen/Qwen3-Next-80B-A3B-Instruct",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.09,
+        "output": 1.1
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "Qwen/Qwen3-VL-235B-A22B-Instruct",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.2,
+        "cached_input": 0.11,
+        "output": 0.88
+      }
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "Qwen/Qwen3-VL-30B-A3B-Instruct",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.15,
+        "output": 0.6
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "Qwen/Qwen3.5-27B",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.26,
+        "output": 2.6
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "Qwen/Qwen3.5-35B-A3B",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.14,
+        "cached_input": 0.05,
+        "output": 1
+      }
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "Qwen/Qwen3.5-397B-A17B",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.45,
+        "cached_input": 0.22,
+        "output": 3
+      }
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "Qwen/Qwen3.5-9B",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.1,
+        "output": 0.15
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "Qwen/Qwen3.6-27B",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.32,
+        "output": 3.2
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "Qwen/Qwen3.6-35B-A3B",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.1,
+        "output": 0.95
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "Qwen/Qwen3.7-Max",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 2.5,
+        "cached_input": 0.5,
+        "output": 7.5
+      }
+    },
+    {
+      "provider": "deepinfra",
+      "provider_name": "DeepInfra",
+      "model": "Qwen/Qwen3.8-Max",
+      "aliases": [],
+      "pricing_url": "https://deepinfra.com/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 1.65,
+        "cached_input": 0.206,
+        "output": 4.951
+      }
+    }
+  ]
+}

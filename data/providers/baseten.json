@@ -1,0 +1,221 @@
+{
+  "schema_version": 1,
+  "generated": "2026-11-02",
+  "currency": "USD",
+  "unit": "per 1M tokens",
+  "license": "CC-BY-4.0",
+  "attribution": "Ganivra (https://ganivra.com/supported-models)",
+  "repository": "https://github.com/ProdMoh/llm-prices",
+  "models": [
+    {
+      "provider": "baseten",
+      "provider_name": "Baseten",
+      "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+      "aliases": [],
+      "pricing_url": "https://www.baseten.co/pricing/",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.13,
+        "cached_input": 0.028,
+        "output": 0.26
+      }
+    },
+    {
+      "provider": "baseten",
+      "provider_name": "Baseten",
+      "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "aliases": [],
+      "pricing_url": "https://www.baseten.co/pricing/",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.3,
+        "cached_input": 0.007,
+        "output": 1.2
+      }
+    },
+    {
+      "provider": "baseten",
+      "provider_name": "Baseten",
+      "model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "aliases": [],
+      "pricing_url": "https://www.baseten.co/pricing/",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.3,
+        "cached_input": 0.007,
+        "output": 1.2
+      }
+    },
+    {
+      "provider": "baseten",
+      "provider_name": "Baseten",
+      "model": "deepseek-ai/DeepSeek-V4.1-Flash-Fast",
+      "aliases": [],
+      "pricing_url": "https://www.baseten.co/pricing/",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.6,
+        "cached_input": 0.014,
+        "output": 2.4
+      }
+    },
+    {
+      "provider": "baseten",
+      "provider_name": "Baseten",
+      "model": "deepseek-v4-pro-0813",
+      "aliases": [],
+      "pricing_url": "https://www.baseten.co/pricing/",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 1.32,
+        "cached_input": 0.132,
+        "output": 3.96
+      }
+    },
+    {
+      "provider": "baseten",
+      "provider_name": "Baseten",
+      "model": "meta-models/muse-spark-open",
+      "aliases": [],
+      "pricing_url": "https://www.baseten.co/pricing/",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 1.25,
+        "cached_input": 0.15,
+        "output": 4.25
+      }
+    },
+    {
+      "provider": "baseten",
+      "provider_name": "Baseten",
+      "model": "moonshotai/Kimi-K3",
+      "aliases": [],
+      "pricing_url": "https://www.baseten.co/pricing/",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 3,
+        "cached_input": 0.3,
+        "output": 15
+      }
+    },
+    {
+      "provider": "baseten",
+      "provider_name": "Baseten",
+      "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+      "aliases": [],
+      "pricing_url": "https://www.baseten.co/pricing/",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.6,
+        "cached_input": 0.12,
+        "output": 2.4
+      }
+    },
+    {
+      "provider": "baseten",
+      "provider_name": "Baseten",
+      "model": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B",
+      "aliases": [],
+      "pricing_url": "https://www.baseten.co/pricing/",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.2,
+        "cached_input": 0.04,
+        "output": 0.5
+      }
+    },
+    {
+      "provider": "baseten",
+      "provider_name": "Baseten",
+      "model": "openai/gpt-oss-120b",
+      "aliases": [],
+      "pricing_url": "https://www.baseten.co/pricing/",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.1,
+        "output": 0.5
+      },
+      "notes": [
+        "No cache discount"
+      ]
+    },
+    {
+      "provider": "baseten",
+      "provider_name": "Baseten",
+      "model": "reflection/Beam-1.0",
+      "aliases": [],
+      "pricing_url": "https://www.baseten.co/pricing/",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.4,
+        "cached_input": 0.04,
+        "output": 1.2
+      }
+    },
+    {
+      "provider": "baseten",
+      "provider_name": "Baseten",
+      "model": "zai-org/GLM-5.2",
+      "aliases": [],
+      "pricing_url": "https://www.baseten.co/pricing/",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 1.4,
+        "cached_input": 0.14,
+        "output": 4.4
+      }
+    },
+    {
+      "provider": "baseten",
+      "provider_name": "Baseten",
+      "model": "zai-org/GLM-5.2-Fast",
+      "aliases": [],
+      "pricing_url": "https://www.baseten.co/pricing/",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 2.1,
+        "cached_input": 0.21,
+        "output": 6.6
+      }
+    },
+    {
+      "provider": "baseten",
+      "provider_name": "Baseten",
+      "model": "zai-org/GLM-5.3",
+      "aliases": [],
+      "pricing_url": "https://www.baseten.co/pricing/",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 1.4,
+        "cached_input": 0.14,
+        "output": 4.4
+      }
+    },
+    {
+      "provider": "baseten",
+      "provider_name": "Baseten",
+      "model": "zai-org/GLM-5.3-Fast",
+      "aliases": [],
+      "pricing_url": "https://www.baseten.co/pricing/",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 2.1,
+        "cached_input": 0.21,
+        "output": 6.6
+      }
+    },
+    {
+      "provider": "baseten",
+      "provider_name": "Baseten",
+      "model": "zai-org/GLM-5.3-Flash",
+      "aliases": [],
+      "pricing_url": "https://www.baseten.co/pricing/",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.15,
+        "cached_input": 0.03,
+        "output": 0.5
+      }
+    }
+  ]
+}
