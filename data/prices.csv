@@ -139,6 +139,17 @@ openai,o3-pro,deprecated,20,,80,,0.5,,,,,,,2026-12-11,https://developers.openai.
 openai,o4-mini,shut_down,1.1,0.275,4.4,,0.5,,,,,,,2026-10-23,https://developers.openai.com/api/docs/pricing
 perplexity,sonar,active,1,,1,,,,,,,,,,https://docs.perplexity.ai/docs/getting-started/pricing
 perplexity,sonar-pro,active,3,,15,,,,,,,,,,https://docs.perplexity.ai/docs/getting-started/pricing
+sarvam,deepseekv4-pro,active,1.21210844,0.04216029,3.68902568,,,,,,,,,,https://docs.sarvam.ai/api/getting-started/pricing
+sarvam,deepseekv4.1-flash-1017,active,0.26350183,0.00527004,1.1067077,,,,,,,,,,https://docs.sarvam.ai/api/getting-started/pricing
+sarvam,gemma4,active,0.36890257,0.10540073,0.9486066,,,,,,,,,,https://docs.sarvam.ai/api/getting-started/pricing
+sarvam,glm5.3,active,1.32804924,0.21080147,4.11062861,,,,,,,,,,https://docs.sarvam.ai/api/getting-started/pricing
+sarvam,glm5.3-flash,active,0.14229099,0.02635018,0.4743033,,,,,,,,,,https://docs.sarvam.ai/api/getting-started/pricing
+sarvam,kimi-k3,active,2.84581981,0.28458198,14.22909903,,,,,,,,,,https://docs.sarvam.ai/api/getting-started/pricing
+sarvam,mimo-v2.6-flash,active,0.13175092,0.00263502,0.26350183,,,,,,,,,,https://docs.sarvam.ai/api/getting-started/pricing
+sarvam,mimo-v2.6-pro,active,0.42160293,0.00316202,0.84320587,,,,,,,,,,https://docs.sarvam.ai/api/getting-started/pricing
+sarvam,sarvam-105b,active,0.1581011,0.05270037,0.6324044,,,,,,,,,,https://docs.sarvam.ai/api/getting-started/pricing
+sarvam,sarvam-105b-conversations,active,0.1581011,0.05270037,0.6324044,,,,,,,,,,https://docs.sarvam.ai/api/getting-started/pricing
+sarvam,sarvam-prism,active,0.04216029,,0,,,,,,,,,,https://docs.sarvam.ai/api/getting-started/pricing
 together,deepseek-ai/DeepSeek-V4-Pro-0813,active,1.32,0.13,3.96,,,,,,,,,,https://www.together.ai/pricing
 together,deepseek-ai/DeepSeek-V4.1-Flash,active,0.3,0.006,1.2,,,,,,,,,,https://www.together.ai/pricing
 together,meta-models/Muse-Spark-Open-816B-A42B,active,1.25,0.15,4.25,,,,,,,,,,https://www.together.ai/pricing

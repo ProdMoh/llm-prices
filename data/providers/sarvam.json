@@ -1,0 +1,285 @@
+{
+  "schema_version": 1,
+  "generated": "2026-11-05",
+  "currency": "USD",
+  "unit": "per 1M tokens",
+  "license": "CC-BY-4.0",
+  "attribution": "Ganivra (https://ganivra.com/supported-models)",
+  "repository": "https://github.com/ProdMoh/llm-prices",
+  "models": [
+    {
+      "provider": "sarvam",
+      "provider_name": "Sarvam",
+      "model": "deepseekv4-pro",
+      "aliases": [],
+      "pricing_url": "https://docs.sarvam.ai/api/getting-started/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 1.21210844,
+        "cached_input": 0.04216029,
+        "output": 3.68902568
+      },
+      "billed_currency": {
+        "currency": "INR",
+        "per_usd": 94.876,
+        "price_per_million_tokens": {
+          "input": 115,
+          "cached_input": 4,
+          "output": 350
+        }
+      },
+      "notes": [
+        "Billed in rupees: ₹115 in / ₹4 cached / ₹350 out, at ₹94.876 per $1, excluding GST"
+      ]
+    },
+    {
+      "provider": "sarvam",
+      "provider_name": "Sarvam",
+      "model": "deepseekv4.1-flash-1017",
+      "aliases": [],
+      "pricing_url": "https://docs.sarvam.ai/api/getting-started/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.26350183,
+        "cached_input": 0.00527004,
+        "output": 1.1067077
+      },
+      "billed_currency": {
+        "currency": "INR",
+        "per_usd": 94.876,
+        "price_per_million_tokens": {
+          "input": 25,
+          "cached_input": 0.5,
+          "output": 105
+        }
+      },
+      "notes": [
+        "Billed in rupees: ₹25 in / ₹0.5 cached / ₹105 out, at ₹94.876 per $1, excluding GST"
+      ]
+    },
+    {
+      "provider": "sarvam",
+      "provider_name": "Sarvam",
+      "model": "gemma4",
+      "aliases": [],
+      "pricing_url": "https://docs.sarvam.ai/api/getting-started/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.36890257,
+        "cached_input": 0.10540073,
+        "output": 0.9486066
+      },
+      "billed_currency": {
+        "currency": "INR",
+        "per_usd": 94.876,
+        "price_per_million_tokens": {
+          "input": 35,
+          "cached_input": 10,
+          "output": 90
+        }
+      },
+      "notes": [
+        "Billed in rupees: ₹35 in / ₹10 cached / ₹90 out, at ₹94.876 per $1, excluding GST"
+      ]
+    },
+    {
+      "provider": "sarvam",
+      "provider_name": "Sarvam",
+      "model": "glm5.3",
+      "aliases": [],
+      "pricing_url": "https://docs.sarvam.ai/api/getting-started/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 1.32804924,
+        "cached_input": 0.21080147,
+        "output": 4.11062861
+      },
+      "billed_currency": {
+        "currency": "INR",
+        "per_usd": 94.876,
+        "price_per_million_tokens": {
+          "input": 126,
+          "cached_input": 20,
+          "output": 390
+        }
+      },
+      "notes": [
+        "Billed in rupees: ₹126 in / ₹20 cached / ₹390 out, at ₹94.876 per $1, excluding GST"
+      ]
+    },
+    {
+      "provider": "sarvam",
+      "provider_name": "Sarvam",
+      "model": "glm5.3-flash",
+      "aliases": [],
+      "pricing_url": "https://docs.sarvam.ai/api/getting-started/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.14229099,
+        "cached_input": 0.02635018,
+        "output": 0.4743033
+      },
+      "billed_currency": {
+        "currency": "INR",
+        "per_usd": 94.876,
+        "price_per_million_tokens": {
+          "input": 13.5,
+          "cached_input": 2.5,
+          "output": 45
+        }
+      },
+      "notes": [
+        "Billed in rupees: ₹13.5 in / ₹2.5 cached / ₹45 out, at ₹94.876 per $1, excluding GST"
+      ]
+    },
+    {
+      "provider": "sarvam",
+      "provider_name": "Sarvam",
+      "model": "kimi-k3",
+      "aliases": [],
+      "pricing_url": "https://docs.sarvam.ai/api/getting-started/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 2.84581981,
+        "cached_input": 0.28458198,
+        "output": 14.22909903
+      },
+      "billed_currency": {
+        "currency": "INR",
+        "per_usd": 94.876,
+        "price_per_million_tokens": {
+          "input": 270,
+          "cached_input": 27,
+          "output": 1350
+        }
+      },
+      "notes": [
+        "Billed in rupees: ₹270 in / ₹27 cached / ₹1,350 out, at ₹94.876 per $1, excluding GST"
+      ]
+    },
+    {
+      "provider": "sarvam",
+      "provider_name": "Sarvam",
+      "model": "mimo-v2.6-flash",
+      "aliases": [],
+      "pricing_url": "https://docs.sarvam.ai/api/getting-started/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.13175092,
+        "cached_input": 0.00263502,
+        "output": 0.26350183
+      },
+      "billed_currency": {
+        "currency": "INR",
+        "per_usd": 94.876,
+        "price_per_million_tokens": {
+          "input": 12.5,
+          "cached_input": 0.25,
+          "output": 25
+        }
+      },
+      "notes": [
+        "Billed in rupees: ₹12.5 in / ₹0.25 cached / ₹25 out, at ₹94.876 per $1, excluding GST"
+      ]
+    },
+    {
+      "provider": "sarvam",
+      "provider_name": "Sarvam",
+      "model": "mimo-v2.6-pro",
+      "aliases": [],
+      "pricing_url": "https://docs.sarvam.ai/api/getting-started/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.42160293,
+        "cached_input": 0.00316202,
+        "output": 0.84320587
+      },
+      "billed_currency": {
+        "currency": "INR",
+        "per_usd": 94.876,
+        "price_per_million_tokens": {
+          "input": 40,
+          "cached_input": 0.3,
+          "output": 80
+        }
+      },
+      "notes": [
+        "Billed in rupees: ₹40 in / ₹0.3 cached / ₹80 out, at ₹94.876 per $1, excluding GST"
+      ]
+    },
+    {
+      "provider": "sarvam",
+      "provider_name": "Sarvam",
+      "model": "sarvam-105b",
+      "aliases": [],
+      "pricing_url": "https://docs.sarvam.ai/api/getting-started/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.1581011,
+        "cached_input": 0.05270037,
+        "output": 0.6324044
+      },
+      "billed_currency": {
+        "currency": "INR",
+        "per_usd": 94.876,
+        "price_per_million_tokens": {
+          "input": 15,
+          "cached_input": 5,
+          "output": 60
+        }
+      },
+      "notes": [
+        "Billed in rupees: ₹15 in / ₹5 cached / ₹60 out, at ₹94.876 per $1, excluding GST"
+      ]
+    },
+    {
+      "provider": "sarvam",
+      "provider_name": "Sarvam",
+      "model": "sarvam-105b-conversations",
+      "aliases": [],
+      "pricing_url": "https://docs.sarvam.ai/api/getting-started/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.1581011,
+        "cached_input": 0.05270037,
+        "output": 0.6324044
+      },
+      "billed_currency": {
+        "currency": "INR",
+        "per_usd": 94.876,
+        "price_per_million_tokens": {
+          "input": 15,
+          "cached_input": 5,
+          "output": 60
+        }
+      },
+      "notes": [
+        "Billed in rupees: ₹15 in / ₹5 cached / ₹60 out, at ₹94.876 per $1, excluding GST"
+      ]
+    },
+    {
+      "provider": "sarvam",
+      "provider_name": "Sarvam",
+      "model": "sarvam-prism",
+      "aliases": [],
+      "pricing_url": "https://docs.sarvam.ai/api/getting-started/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 0.04216029,
+        "output": 0
+      },
+      "billed_currency": {
+        "currency": "INR",
+        "per_usd": 94.876,
+        "price_per_million_tokens": {
+          "input": 4,
+          "output": 0
+        }
+      },
+      "notes": [
+        "Billed in rupees: ₹4 in / ₹0 out, at ₹94.876 per $1, excluding GST",
+        "No cache discount"
+      ]
+    }
+  ]
+}

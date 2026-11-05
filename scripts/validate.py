@@ -41,13 +41,21 @@ def main() -> int:
     if split != len(prices["models"]):
         errors.append(f"data/providers has {split} models for {len(prices['models'])} in prices.json")
 
+    services = json.loads((ROOT / "data/services.json").read_text())
+    services_schema = json.loads((ROOT / "schema/services.schema.json").read_text())
+    errors += [f"services.json {'/'.join(map(str, e.path))}: {e.message}" for e in Draft202012Validator(services_schema).iter_errors(services)]
+    for s in services["services"]:
+        dates = [c["effective"] for c in s.get("scheduled_changes", [])]
+        if dates != sorted(dates) or any(d <= services["generated"] for d in dates):
+            errors.append(f"{s['provider']}/{s['model']}: scheduled changes must be future dates in order")
+
     shutdowns = json.loads((ROOT / "data/shutdowns.json").read_text())["shutdowns"]
     if [s["shutdown_date"] for s in shutdowns] != sorted(s["shutdown_date"] for s in shutdowns):
         errors.append("shutdowns.json is not sorted by date")
 
     for error in errors:
         print(error, file=sys.stderr)
-    print(f"{len(prices['models'])} models, {len(shutdowns)} shutdown groups, {len(errors)} errors")
+    print(f"{len(prices['models'])} models, {len(services['services'])} per-unit services, {len(shutdowns)} shutdown groups, {len(errors)} errors")
     return 1 if errors else 0
 
 

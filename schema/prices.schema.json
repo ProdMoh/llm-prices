@@ -28,7 +28,7 @@
       "required": ["provider", "provider_name", "model", "aliases", "pricing_url", "status", "price_per_million_tokens"],
       "additionalProperties": false,
       "properties": {
-        "provider": { "enum": ["openai", "anthropic", "google", "perplexity", "together", "fireworks", "deepinfra", "baseten"] },
+        "provider": { "enum": ["openai", "anthropic", "google", "perplexity", "together", "fireworks", "deepinfra", "baseten", "sarvam"] },
         "provider_name": { "type": "string" },
         "model": { "type": "string", "minLength": 1 },
         "aliases": { "type": "array", "items": { "type": "string" } },
@@ -68,6 +68,17 @@
         "retirement": {
           "type": "object", "required": ["shutdown_date", "earliest_date", "replacement", "source"], "additionalProperties": false,
           "properties": { "shutdown_date": { "$ref": "#/$defs/date" }, "earliest_date": { "type": "boolean" }, "replacement": { "type": "string" }, "source": { "type": "string", "format": "uri" } }
+        },
+        "billed_currency": {
+          "description": "For providers that bill in another currency: their own prices, and the units of that currency per US dollar used to convert them.",
+          "type": "object", "required": ["currency", "per_usd", "price_per_million_tokens"], "additionalProperties": false,
+          "properties": {
+            "currency": { "type": "string", "pattern": "^[A-Z]{3}$" }, "per_usd": { "type": "number", "exclusiveMinimum": 0 },
+            "price_per_million_tokens": {
+              "type": "object", "required": ["input", "output"], "additionalProperties": false,
+              "properties": { "input": { "$ref": "#/$defs/price" }, "cached_input": { "$ref": "#/$defs/price" }, "output": { "$ref": "#/$defs/price" } }
+            }
+          }
         },
         "notes": { "type": "array", "items": { "type": "string" } }
       }

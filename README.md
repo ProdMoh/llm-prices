@@ -3,9 +3,9 @@
 [![Validate](https://github.com/ProdMoh/llm-prices/actions/workflows/validate.yml/badge.svg)](https://github.com/ProdMoh/llm-prices/actions/workflows/validate.yml)
 [![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-Token prices for OpenAI, Anthropic Claude, Google Gemini, Perplexity and open models on Together AI, Fireworks, DeepInfra and Baseten, as JSON and CSV. Each model has its input, cached input and output price per million tokens, Batch and other service tiers, long-prompt rates, scheduled price changes and shutdown dates, with a link to the provider's pricing page.
+Token prices for OpenAI, Anthropic Claude, Google Gemini, Perplexity, Sarvam and open models on Together AI, Fireworks, DeepInfra and Baseten, as JSON and CSV, plus Sarvam's speech, translation and document APIs, which are priced per minute, character or page. Each model has its input, cached input and output price per million tokens, Batch and other service tiers, long-prompt rates, scheduled price changes and shutdown dates, with a link to the provider's pricing page.
 
-Last generated: <!-- generated -->2026-11-02<!-- /generated -->
+Last generated: <!-- generated -->2026-11-05<!-- /generated -->
 
 Maintained by [Ganivra](https://ganivra.com), which uses these same prices to work out what each customer of an AI product costs to serve.
 
@@ -30,6 +30,7 @@ USD per million tokens, standard tier, on each provider's own API.
 | Google Gemini | `gemini-3.8-flash` | $0.75 | $0.075 | $3.75 | $1.50 / $7.50 from 2027-01-01 |
 | Google Gemini | `gemini-3.5-flash-lite` | $0.30 | $0.03 | $2.50 |  |
 | Together AI | `deepseek-ai/DeepSeek-V4.1-Flash` | $0.30 | $0.006 | $1.20 |  |
+| Sarvam | `sarvam-105b` | $0.16 | $0.05270037 | $0.63 |  |
 <!-- prices:end -->
 
 Every model is in [`data/prices.json`](data/prices.json). Browse them on [ganivra.com/supported-models](https://ganivra.com/supported-models), or compare two side by side at [ganivra.com/models/compare](https://ganivra.com/models/compare).
@@ -41,8 +42,10 @@ Every model is in [`data/prices.json`](data/prices.json). Browse them on [ganivr
 | [`data/prices.json`](data/prices.json) | Every model with its current prices, service tiers, long-prompt rates, scheduled changes and shutdown date |
 | [`data/prices.csv`](data/prices.csv) | The same models as one row each, for spreadsheets |
 | [`data/providers/*.json`](data/providers) | `prices.json` split by provider |
+| [`data/services.json`](data/services.json) | Speech, translation and document APIs billed per minute, per 1,000 characters or per page, not per token |
 | [`data/shutdowns.json`](data/shutdowns.json) | Every announced model shutdown from the OpenAI, Anthropic and Gemini deprecation pages, including audio, image and embedding models |
 | [`schema/prices.schema.json`](schema/prices.schema.json) | JSON Schema for `prices.json` |
+| [`schema/services.schema.json`](schema/services.schema.json) | JSON Schema for `services.json` |
 
 ## Use it
 
@@ -87,7 +90,7 @@ Each entry in `models`:
 
 | Field | Meaning |
 |---|---|
-| `provider`, `provider_name` | Provider ID (`openai`, `anthropic`, `google`, `perplexity`, `together`, `fireworks`, `deepinfra`, `baseten`) and display name |
+| `provider`, `provider_name` | Provider ID (`openai`, `anthropic`, `google`, `perplexity`, `together`, `fireworks`, `deepinfra`, `baseten`, `sarvam`) and display name |
 | `model`, `aliases` | The model ID you send to the API, and dated snapshots or aliases billed at the same price |
 | `pricing_url` | The provider page the price comes from |
 | `status` | `active`, `deprecated` (a shutdown date is announced) or `shut_down` (the date has passed). Shut-down models stay listed so older usage can still be priced |
@@ -97,7 +100,16 @@ Each entry in `models`:
 | `fast_mode_price_per_million_tokens` | Absolute fast mode prices, where the provider publishes them instead of a multiplier |
 | `scheduled_changes` | Announced future prices with their `effective` date |
 | `retirement` | `shutdown_date`, the recommended `replacement`, and `earliest_date: true` when the provider (Google) gives the earliest date it may shut the model down |
+| `billed_currency` | For providers that bill in another currency (Sarvam bills in Indian rupees): their own `price_per_million_tokens` in that `currency`, and `per_usd`, the exchange rate used for the dollar prices |
 | `notes` | Other charges in plain words, such as web search or grounding fees |
+
+### Per-unit services
+
+Each entry in `services.json` has `provider`, `model`, `pricing_url` and `prices`. Each price gives the `usage_key` to count (`audio_seconds`, `characters`, `pages`), what it is charged `per` (a minute of audio, 1,000 characters, a page), the `billed` amount in the provider's currency, and its `usd` equivalent. `scheduled_changes` lists announced future prices.
+
+### Prices in rupees
+
+Sarvam bills in Indian rupees, excluding GST. The dollar prices are converted at one fixed rate, given in `per_usd` (₹94.876 per $1, the RBI reference rate for 2 November 2026). Use the rupee prices to check a Sarvam invoice.
 
 Prices are list prices for each provider's own API. Bedrock, Vertex AI, Azure and other resellers set their own prices and schedules. Taxes, regional surcharges and volume discounts are not included.
 
