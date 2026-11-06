@@ -122,11 +122,14 @@ openai,gpt-5.4-mini,active,0.75,0.075,4.5,,0.5,,,,,,,,https://developers.openai.
 openai,gpt-5.4-nano,deprecated,0.2,0.02,1.25,,0.5,,,,,,,2027-04-01,https://developers.openai.com/api/docs/pricing
 openai,gpt-5.4-pro,active,30,,180,,0.5,272000,60,270,,,,,https://developers.openai.com/api/docs/pricing
 openai,gpt-5.5,active,5,0.5,30,,0.5,272000,10,45,,,,,https://developers.openai.com/api/docs/pricing
+openai,gpt-5.5-cyber,active,12.5,1.25,75,,,,,,,,,,https://developers.openai.com/api/docs/pricing
 openai,gpt-5.5-pro,active,30,,180,,0.5,272000,60,270,,,,,https://developers.openai.com/api/docs/pricing
+openai,gpt-5.6-cyber,active,12.5,1.25,75,,,272000,25,112.5,,,,,https://developers.openai.com/api/docs/pricing
 openai,gpt-5.6-luna,active,0.2,0.02,1.2,,0.5,272000,0.4,1.8,,,,,https://developers.openai.com/api/docs/pricing
 openai,gpt-5.6-sol,active,4,0.4,20,,0.5,272000,8,30,,,,,https://developers.openai.com/api/docs/pricing
 openai,gpt-5.6-terra,active,2,0.2,12,,0.5,272000,4,18,,,,,https://developers.openai.com/api/docs/pricing
 openai,gpt-6-astra,active,10,1,50,,0.5,272000,20,75,,,,,https://developers.openai.com/api/docs/pricing
+openai,gpt-6-cyber,active,20,2,100,,,,,,,,,,https://developers.openai.com/api/docs/pricing
 openai,gpt-6-luna,active,0.1,0.01,0.5,,0.5,272000,0.2,0.75,,,,,https://developers.openai.com/api/docs/pricing
 openai,gpt-6-sol,active,2,0.2,10,,0.5,272000,4,15,,,,,https://developers.openai.com/api/docs/pricing
 openai,gpt-6.1-sol,active,2,0.1,10,,0.5,272000,4,15,,,,,https://developers.openai.com/api/docs/pricing

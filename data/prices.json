@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated": "2026-11-05",
+  "generated": "2026-11-06",
   "currency": "USD",
   "unit": "per 1M tokens",
   "license": "CC-BY-4.0",
@@ -2456,6 +2456,22 @@
     {
       "provider": "openai",
       "provider_name": "OpenAI",
+      "model": "gpt-5.5-cyber",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 12.5,
+        "cached_input": 1.25,
+        "output": 75
+      },
+      "notes": [
+        "No published price above 272K input tokens"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
       "model": "gpt-5.5-pro",
       "aliases": [],
       "pricing_url": "https://developers.openai.com/api/docs/pricing",
@@ -2476,6 +2492,30 @@
       "notes": [
         "Batch at 50% off",
         "Above 272K input tokens: $60.00 in / $270.00 out"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.6-cyber",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 12.5,
+        "cached_input": 1.25,
+        "output": 75,
+        "cache_write": 15.625
+      },
+      "long_prompt": {
+        "over_input_tokens": 272000,
+        "input": 25,
+        "cached_input": 2.5,
+        "output": 112.5
+      },
+      "notes": [
+        "Above 272K input tokens: $25.00 in / $112.50 out",
+        "Cache writes $15.625"
       ]
     },
     {
@@ -2609,6 +2649,24 @@
         "Fast mode at 2×",
         "Above 272K input tokens: $20.00 in / $75.00 out",
         "Cache writes $12.50"
+      ]
+    },
+    {
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-6-cyber",
+      "aliases": [],
+      "pricing_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "active",
+      "price_per_million_tokens": {
+        "input": 20,
+        "cached_input": 2,
+        "output": 100,
+        "cache_write": 25
+      },
+      "notes": [
+        "No published price above 272K input tokens",
+        "Cache writes $25.00"
       ]
     },
     {

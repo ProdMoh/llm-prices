@@ -5,7 +5,7 @@
 
 Token prices for OpenAI, Anthropic Claude, Google Gemini, Perplexity, Sarvam and open models on Together AI, Fireworks, DeepInfra and Baseten, as JSON and CSV, plus Sarvam's speech, translation and document APIs, which are priced per minute, character or page. Each model has its input, cached input and output price per million tokens, Batch and other service tiers, long-prompt rates, scheduled price changes and shutdown dates, with a link to the provider's pricing page.
 
-Last generated: <!-- generated -->2026-11-05<!-- /generated -->
+Last generated: <!-- generated -->2026-11-06<!-- /generated -->
 
 Maintained by [Ganivra](https://ganivra.com), which uses these same prices to work out what each customer of an AI product costs to serve.
 
