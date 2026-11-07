@@ -3,11 +3,37 @@
 [![Validate](https://github.com/ProdMoh/llm-prices/actions/workflows/validate.yml/badge.svg)](https://github.com/ProdMoh/llm-prices/actions/workflows/validate.yml)
 [![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-Token prices for OpenAI, Anthropic Claude, Google Gemini, Perplexity, Sarvam and open models on Together AI, Fireworks, DeepInfra and Baseten, as JSON and CSV, plus Sarvam's speech, translation and document APIs, which are priced per minute, character or page. Each model has its input, cached input and output price per million tokens, Batch and other service tiers, long-prompt rates, scheduled price changes and shutdown dates, with a link to the provider's pricing page.
+Estimate an LLM request, compare providers, or check whether an announced price change affects your app. Download source-linked prices as JSON or CSV for your calculator, spreadsheet, or cost reporting.
+
+Includes OpenAI, Anthropic Claude, Google Gemini, Perplexity, Sarvam, and open models on Together AI, Fireworks, DeepInfra, and Baseten. Each model includes token rates, cache prices where available, service tiers, long-prompt rates, scheduled changes, and shutdown dates. Sarvam speech, translation, and document API rates are available separately.
 
 Last generated: <!-- generated -->2026-11-06<!-- /generated -->
 
 Maintained by [Ganivra](https://ganivra.com), which uses these same prices to work out what each customer of an AI product costs to serve.
+
+| What you need | Where to start |
+| --- | --- |
+| Prices for code or a spreadsheet | [JSON](data/prices.json) · [CSV](data/prices.csv) |
+| Estimate a request | [Python and JavaScript examples](#use-it) |
+| Compare models in a browser | [Model comparison](https://ganivra.com/models/compare?utm_source=github&utm_medium=readme&utm_campaign=llm_prices) |
+| Follow upcoming changes | [Price changes](https://ganivra.com/models/price-changes?utm_source=github&utm_medium=readme&utm_campaign=llm_prices) · [RSS](https://ganivra.com/models/price-changes/feed.xml) |
+| Check model retirements | [Shutdown dates](data/shutdowns.json) |
+
+## Try the data locally
+
+After cloning this repository, run this standard-library Python example from the repository root to list announced changes.
+
+```python
+import json
+from pathlib import Path
+
+data = json.loads(Path("data/prices.json").read_text())
+for model in data["models"]:
+    for change in model.get("scheduled_changes", []):
+        print(model["provider"], model["model"], change)
+```
+
+Use each model's `pricing_url` to inspect its source. Pin a commit and record the dataset version when you need reproducible estimates.
 
 ## Current prices
 
@@ -55,7 +81,7 @@ Fetch the latest file straight from GitHub:
 curl -s https://raw.githubusercontent.com/ProdMoh/llm-prices/main/data/prices.json
 ```
 
-Price a request in Python:
+Estimate standard-tier text tokens in Python. Here `input_tokens` includes cache reads and `cached_tokens` is the cached subset. The example excludes cache writes, tool charges, service-tier adjustments, and taxes. Use the matching fields below for those charges.
 
 ```python
 import json, urllib.request
@@ -70,7 +96,9 @@ def cost(provider, model, input_tokens, output_tokens, cached_tokens=0):
     # Past the long-prompt threshold, the whole request is billed at the higher rates.
     if long and input_tokens > long["over_input_tokens"]:
         p = long
-    cached_rate = p.get("cached_input") or p["input"]
+    cached_rate = p.get("cached_input")
+    if cached_rate is None:
+        cached_rate = p["input"]
     return ((input_tokens - cached_tokens) * p["input"] + cached_tokens * cached_rate + output_tokens * p["output"]) / 1_000_000
 
 print(round(cost("anthropic", "claude-sonnet-5-5", 3_000, 500), 6))  # 0.011
@@ -120,6 +148,13 @@ Prices are copied from each provider's pricing and deprecation pages and checked
 Upcoming price changes and shutdowns across providers are also on [ganivra.com/models/price-changes](https://ganivra.com/models/price-changes), with an [RSS feed](https://ganivra.com/models/price-changes/feed.xml).
 
 Found a wrong or missing price? [Open an issue](https://github.com/ProdMoh/llm-prices/issues/new) with a link to the provider's pricing page.
+
+## Connect prices to your actual customers
+
+Add token usage and customer identifiers to calculate what each workflow costs to deliver. Ganivra captures usage, groups calls into executions, and combines recorded costs with your revenue so you can investigate customer contribution.
+
+[Set up customer cost tracking](https://ganivra.com/integration?utm_source=github&utm_medium=readme&utm_campaign=llm_prices)
+or explore the [Python SDK](https://github.com/ProdMoh/ganivra-python).
 
 ## License
 
